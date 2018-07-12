@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Project1.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">CS410J Phone Bill Project</a> &gt; <a href="index.source.html" class="el_package">edu.pdx.cs410J.anturner</a> &gt; <span class="el_source">Project1.java</span></div><h1>Project1.java</h1><pre class="source lang-java linenums">package edu.pdx.cs410J.anturner;
+
+import java.util.Scanner;
+
+/**
+ * The main class for the CS410J Phone Bill Project
+ *
+ * Project1 should contain main method that parse the command line,
+ * creates a PhoneBill and a PhoneCall as specified by the command line,
+ * adds the PhoneCall to the PhoneBill, and optionally prints a description
+ * of the PhoneCall returned by its toString method.
+ *
+ */
+<span class="nc" id="L14">public class Project1 {</span>
+
+  public static void main(String[] args) {
+<span class="fc" id="L17">    PhoneCall call = new PhoneCall();  // Refer to one of Dave's classes so that we can be sure it is on the classpath</span>
+
+<span class="fc bfc" id="L19" title="All 2 branches covered.">    if(args.length == 0){</span>
+<span class="fc" id="L20">      System.err.println(&quot;Missing command line arguments&quot;);</span>
+<span class="nc" id="L21">      System.exit(1);</span>
+    }
+
+    /**
+     * Parses command line for appropriate format
+     */
+    //parseCommandLine(args);
+
+<span class="fc" id="L29">    int i = 0;</span>
+<span class="pc bpc" id="L30" title="1 of 2 branches missed.">    for (String arg : args) {</span>
+<span class="fc" id="L31">      System.out.println(i + arg);</span>
+<span class="fc" id="L32">      i++;</span>
+    }
+<span class="nc" id="L34">    System.exit(1);</span>
+<span class="nc" id="L35">  }</span>
+
+  /**
+   *
+   * @param args
+   *
+   * Parses command line for appropriate arguments with valid syntax
+   *
+   */
+//  private static void parseCommandLine(String[] args) {
+//
+//    /**
+//     * Check if valid arguments
+//     */
+//    if(!args[0].contains(&quot;-p&quot;)) {
+//      System.err.println(&quot;Invalid command line arguments&quot;);
+//      System.exit(1);
+//    }
+//
+//
+//
+//
+//  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>
