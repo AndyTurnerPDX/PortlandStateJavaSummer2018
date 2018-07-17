@@ -1,6 +1,8 @@
 package edu.pdx.cs410J.anturner;
 import edu.pdx.cs410J.AbstractPhoneBill;
 import edu.pdx.cs410J.AbstractPhoneCall;
+
+import java.util.ArrayList;
 import java.util.Collection;
 
 /**
@@ -11,9 +13,12 @@ import java.util.Collection;
 public class PhoneBill extends AbstractPhoneBill {
 
     private String customerName;
+    ArrayList<PhoneCall> calls;
 
-    public PhoneBill(String passName) {
-        setCustomerName(passName);
+
+    public PhoneBill(String name, ArrayList<String> calls) {
+        customerName = name;
+
     }
 
     private void setCustomerName(String passName) {

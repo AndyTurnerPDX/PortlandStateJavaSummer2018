@@ -16,23 +16,30 @@ import java.util.Scanner;
   public static void main(String[] args) {
 <span class="fc" id="L17">    PhoneCall call = new PhoneCall();  // Refer to one of Dave's classes so that we can be sure it is on the classpath</span>
 
-<span class="fc bfc" id="L19" title="All 2 branches covered.">    if(args.length == 0){</span>
+<span class="fc bfc" id="L19" title="All 2 branches covered.">    if(args.length &lt;= 4){</span>
 <span class="fc" id="L20">      System.err.println(&quot;Missing command line arguments&quot;);</span>
 <span class="nc" id="L21">      System.exit(1);</span>
     }
+<span class="pc bpc" id="L23" title="1 of 2 branches missed.">    if(args[4].contains(&quot;-p&quot;)){</span>
+<span class="nc" id="L24">        System.out.println(&quot;Print Command&quot;);</span>
+    }
+<span class="pc bpc" id="L26" title="1 of 2 branches missed.">    if(args[5].contains(&quot;-r&quot;)){</span>
+<span class="nc" id="L27">        System.out.println(&quot;Read Me Command&quot;);</span>
+    }
+
 
     /**
      * Parses command line for appropriate format
      */
     //parseCommandLine(args);
 
-<span class="fc" id="L29">    int i = 0;</span>
-<span class="pc bpc" id="L30" title="1 of 2 branches missed.">    for (String arg : args) {</span>
-<span class="fc" id="L31">      System.out.println(i + arg);</span>
-<span class="fc" id="L32">      i++;</span>
+<span class="fc" id="L36">    int i = 0;</span>
+<span class="pc bpc" id="L37" title="1 of 2 branches missed.">    for (String arg : args) {</span>
+<span class="fc" id="L38">      System.out.println(&quot;Arg: &quot; + i + &quot; &quot; + arg);</span>
+<span class="fc" id="L39">      i++;</span>
     }
-<span class="nc" id="L34">    System.exit(1);</span>
-<span class="nc" id="L35">  }</span>
+<span class="nc" id="L41">    System.exit(1);</span>
+<span class="nc" id="L42">  }</span>
 
   /**
    *

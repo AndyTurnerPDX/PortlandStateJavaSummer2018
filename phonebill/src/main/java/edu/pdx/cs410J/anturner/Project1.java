@@ -16,10 +16,17 @@ public class Project1 {
   public static void main(String[] args) {
     PhoneCall call = new PhoneCall();  // Refer to one of Dave's classes so that we can be sure it is on the classpath
 
-    if(args.length == 0){
+    if(args.length <= 4){
       System.err.println("Missing command line arguments");
       System.exit(1);
     }
+    if(args[4].contains("-p")){
+        System.out.println("Print Command");
+    }
+    if(args[5].contains("-r")){
+        System.out.println("Read Me Command");
+    }
+
 
     /**
      * Parses command line for appropriate format
@@ -28,7 +35,7 @@ public class Project1 {
 
     int i = 0;
     for (String arg : args) {
-      System.out.println(i + arg);
+      System.out.println("Arg: " + i + " " + arg);
       i++;
     }
     System.exit(1);

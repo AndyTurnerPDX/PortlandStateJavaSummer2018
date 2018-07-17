@@ -67,4 +67,21 @@ public class Project1IT extends InvokeMainTestCase {
         assertThat(result.getExitCode(), equalTo(1));
        // assertThat(result.getTextWrittenToStandardError(), containsString("Missing command line arguments"));
     }
+
+    /**
+     * Tests that invoking the main method with happy path arguments
+     */
+    @Test
+    public void testHappyPathWithPrint() {
+
+        String argCustomerName = "Another Name";
+        String callerNumber = "000-000-0000";
+        String calleeNumber = "111=111=1111";
+        String startTime = "1/15/2018 19:40";
+        String endTime = "1/15/2018 19:40";
+        String print = "-print";
+
+        MainMethodResult result = invokeMain(argCustomerName, calleeNumber,calleeNumber, startTime, endTime, print);
+        assertThat(result.getTextWrittenToStandardOut(), containsString("print"));
+    }
 }

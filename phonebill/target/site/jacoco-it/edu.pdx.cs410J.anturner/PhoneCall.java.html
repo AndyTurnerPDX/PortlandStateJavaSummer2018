@@ -9,25 +9,56 @@
 
 import edu.pdx.cs410J.AbstractPhoneCall;
 
-<span class="fc" id="L12">public class PhoneCall extends AbstractPhoneCall {</span>
+public class PhoneCall extends AbstractPhoneCall {
 
-  private String caller;
-  private String callee;
+  private String callerNumber;
+  private String calleeNumber;
+  private String startTime;
+  private String endTIme;
+
+<span class="fc" id="L19">  public PhoneCall(){}</span>
+
+<span class="nc" id="L21">  public PhoneCall(String callerPassNumber, String calleePassNumber, String passStartTime, String passEndTime) {</span>
+
+<span class="nc" id="L23">      setCallerNumber(calleePassNumber);</span>
+
+<span class="nc" id="L25">  }</span>
 
   @Override
-<span class="nc" id="L18">  public String getCaller() { throw new UnsupportedOperationException(&quot;This method is not implemented yet&quot;); }</span>
+<span class="nc" id="L28">  public String getCaller() { throw new UnsupportedOperationException(&quot;This method is not implemented yet&quot;); }</span>
+
+  public void setCallerNumber(String number) {
+
+<span class="nc bnc" id="L32" title="All 4 branches missed.">      if(number.length() &lt; 10 || number.length() &gt; 10  ) {</span>
+<span class="nc" id="L33">          throw new IllegalArgumentException(&quot;Caller number must be 10 digits.&quot;);</span>
+      }
+<span class="nc bnc" id="L35" title="All 2 branches missed.">      if(number.length() == 13){</span>
+          // 012-456-8901
+<span class="nc bnc" id="L37" title="All 4 branches missed.">          if(number.charAt(3) == '-' &amp;&amp; number.charAt(7) == '-'){</span>
+<span class="nc" id="L38">              throw new IllegalArgumentException(&quot;Caller number must be 10 digits.&quot;);</span>
+          }
+          else {
+<span class="nc" id="L41">              callerNumber = number;</span>
+          }
+      }
+<span class="nc bnc" id="L44" title="All 2 branches missed.">      if(number.length() == 10)</span>
+<span class="nc bnc" id="L45" title="All 2 branches missed.">          if(number.matches(&quot;[0-9]+&quot;))</span>
+<span class="nc" id="L46">              callerNumber = number;</span>
+      else
+<span class="nc" id="L48">          throw new IllegalArgumentException(&quot;Caller number must be 10 digits.&quot;);</span>
+<span class="nc" id="L49">  }</span>
 
   @Override
-<span class="nc" id="L21">  public String getCallee() { throw new UnsupportedOperationException(&quot;This method is not implemented yet&quot;); }</span>
+<span class="nc" id="L52">  public String getCallee() { throw new UnsupportedOperationException(&quot;This method is not implemented yet&quot;); }</span>
 
   @Override
   public String getStartTimeString() {
-<span class="nc" id="L25">    throw new UnsupportedOperationException(&quot;This method is not implemented yet&quot;);</span>
+<span class="nc" id="L56">    throw new UnsupportedOperationException(&quot;This method is not implemented yet&quot;);</span>
   }
 
   @Override
   public String getEndTimeString() {
-<span class="nc" id="L30">    throw new UnsupportedOperationException(&quot;This method is not implemented yet&quot;);</span>
+<span class="nc" id="L61">    throw new UnsupportedOperationException(&quot;This method is not implemented yet&quot;);</span>
   }
 
 }
