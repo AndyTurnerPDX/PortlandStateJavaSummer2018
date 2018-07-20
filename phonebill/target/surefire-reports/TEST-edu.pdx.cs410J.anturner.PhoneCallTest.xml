@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/an_d/Documents/school/2018 Q2/git/PortlandStateJavaSummer2018/phonebill/target/surefire/surefirebooter1835419397006285113.jar /Users/an_d/Documents/school/2018 Q2/git/PortlandStateJavaSummer2018/phonebill/target/surefire 2018-07-16T21-40-53_895-jvmRun1 surefire14935638510367426728tmp surefire_013244935915140577277tmp"/>
+    <property name="sun.java.command" value="/Users/an_d/Documents/school/2018 Q2/git/PortlandStateJavaSummer2018/phonebill/target/surefire/surefirebooter3479475318360364399.jar /Users/an_d/Documents/school/2018 Q2/git/PortlandStateJavaSummer2018/phonebill/target/surefire 2018-07-18T21-07-22_397-jvmRun1 surefire14258958800743475766tmp surefire_012958521855485232600tmp"/>
     <property name="http.nonProxyHosts" value="127.0.0.1|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/an_d/Documents/school/2018 Q2/git/PortlandStateJavaSummer2018/phonebill/target/test-classes:/Users/an_d/Documents/school/2018 Q2/git/PortlandStateJavaSummer2018/phonebill/target/classes:/Users/an_d/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/an_d/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/an_d/.m2/repository/edu/pdx/cs410J/projects/Summer2018/projects-Summer2018.jar:/Users/an_d/.m2/repository/edu/pdx/cs410J/projects/Summer2018/projects-Summer2018-tests.jar:"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/an_d/Documents/school/2018 Q2/git/PortlandStateJavaSummer2018/phonebill/target/surefire/surefirebooter1835419397006285113.jar"/>
+    <property name="surefire.real.class.path" value="/Users/an_d/Documents/school/2018 Q2/git/PortlandStateJavaSummer2018/phonebill/target/surefire/surefirebooter3479475318360364399.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="127.0.0.1|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="10.0.1+10"/>

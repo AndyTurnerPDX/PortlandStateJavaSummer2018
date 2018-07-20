@@ -15,13 +15,14 @@ public class PhoneBill extends AbstractPhoneBill {
     private String customerName;
     ArrayList<PhoneCall> calls;
 
+    public PhoneBill() {}
 
     public PhoneBill(String name, ArrayList<String> calls) {
         customerName = name;
 
     }
 
-    private void setCustomerName(String passName) {
+    public void setCustomerName(String passName) {
         customerName = passName;
     }
 
@@ -40,5 +41,8 @@ public class PhoneBill extends AbstractPhoneBill {
         return null;
     }
 
+    public void print() {
+        System.out.println(getCustomer());
+    }
 
 }

@@ -13,54 +13,48 @@ import java.util.Scanner;
  */
 public class Project1 {
 
-  public static void main(String[] args) {
-    PhoneCall call = new PhoneCall();  // Refer to one of Dave's classes so that we can be sure it is on the classpath
+    public static void main(String[] args) {
 
-    if(args.length <= 4){
-      System.err.println("Missing command line arguments");
-      System.exit(1);
+        PhoneCall call = new PhoneCall();  // Refer to one of Dave's classes so that we can be sure it is on the classpath
+
+        PhoneBill bill = new PhoneBill();
+
+        if(args.length < 4){
+            System.err.println("Missing command line arguments");
+            System.exit(1);
+        }
+        if(args[0] != null){
+            bill.setCustomerName(args[0]);
+        }
+        if(args[1] != null){
+
+        }
+        if(args[2] != null){
+
+        }
+        if(args[3] != null){
+
+        }
+        if(args[5] != null){
+            if(args[5].contains("-p")) {
+                bill.print();
+            }
+            if(args[5].contains("-r")){
+                System.out.println("Read Me Command");
+            }
+        }
+        if(args[6] != null){
+            if(args[6].contains("-p")) {
+                bill.print();
+            }
+            if(args[6].contains("-r")){
+                System.out.println("Read Me Command");
+            }
+        }
+
+        for(String arg : args)
+            System.out.println(arg);
+        System.exit(1);
     }
-    if(args[4].contains("-p")){
-        System.out.println("Print Command");
-    }
-    if(args[5].contains("-r")){
-        System.out.println("Read Me Command");
-    }
-
-
-    /**
-     * Parses command line for appropriate format
-     */
-    //parseCommandLine(args);
-
-    int i = 0;
-    for (String arg : args) {
-      System.out.println("Arg: " + i + " " + arg);
-      i++;
-    }
-    System.exit(1);
-  }
-
-  /**
-   *
-   * @param args
-   *
-   * Parses command line for appropriate arguments with valid syntax
-   *
-   */
-//  private static void parseCommandLine(String[] args) {
-//
-//    /**
-//     * Check if valid arguments
-//     */
-//    if(!args[0].contains("-p")) {
-//      System.err.println("Invalid command line arguments");
-//      System.exit(1);
-//    }
-//
-//
-//
-//
-//  }
 
 }

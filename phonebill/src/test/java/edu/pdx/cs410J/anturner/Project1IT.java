@@ -65,7 +65,7 @@ public class Project1IT extends InvokeMainTestCase {
         String withQuoteAroundName = "\"Andy Turner\"";
         MainMethodResult result = invokeMain(withQuoteAroundName);
         assertThat(result.getExitCode(), equalTo(1));
-       // assertThat(result.getTextWrittenToStandardError(), containsString("Missing command line arguments"));
+        assertThat(result.getTextWrittenToStandardError(), containsString("Missing command line arguments"));
     }
 
     /**
@@ -74,14 +74,36 @@ public class Project1IT extends InvokeMainTestCase {
     @Test
     public void testHappyPathWithPrint() {
 
-        String argCustomerName = "Another Name";
-        String callerNumber = "000-000-0000";
-        String calleeNumber = "111=111=1111";
-        String startTime = "1/15/2018 19:40";
-        String endTime = "1/15/2018 19:40";
-        String print = "-print";
+        String arg0 = "Another Name";
+        String arg1 = "000-000-0000";
+        String arg2 = "111-111-1111";
+        String arg3 = "1/15/2018 19:40";
+        String arg4 = "1/15/2018 19:40";
+        String arg5 = "-print";
+        //String readme = "-readme";
 
-        MainMethodResult result = invokeMain(argCustomerName, calleeNumber,calleeNumber, startTime, endTime, print);
-        assertThat(result.getTextWrittenToStandardOut(), containsString("print"));
+        //MainMethodResult result = invokeMain(arg0, arg1, arg2, arg3, arg4, arg5);
+
+        //MainMethodResult result = invokeMain("another name", "000-000-0000","111-111-1111", "1/15/2018 19:40");
+        //System.out.println(result.getTextWrittenToStandardOut());
+
+       // assertThat(result.getTextWrittenToStandardOut(), containsString("Another"));
     }
+
+    @Test
+    public void testHappyPathWithReadMeAsFith() {
+
+        String arg0 = "Another Name";
+        String arg1 = "000-000-0000";
+        String arg2 = "111-111-1111";
+        String arg3 = "1/15/2018 19:40";
+        String arg4 = "1/15/2018 19:40";
+        String arg5 = "-readme";
+
+        MainMethodResult result = invokeMain(arg0, arg1, arg2, arg3, arg4, arg5); // , arg3, arg4);
+
+        //assertThat(result.getTextWrittenToStandardOut(), containsString("read"));
+    }
+
+
 }

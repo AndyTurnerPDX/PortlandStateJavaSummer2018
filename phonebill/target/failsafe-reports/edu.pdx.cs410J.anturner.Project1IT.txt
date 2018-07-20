@@ -1,4 +1,26 @@
 -------------------------------------------------------------------------------
 Test set: edu.pdx.cs410J.anturner.Project1IT
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 s - in edu.pdx.cs410J.anturner.Project1IT
+Tests run: 6, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.121 s <<< FAILURE! - in edu.pdx.cs410J.anturner.Project1IT
+testHappyPathWithPrint(edu.pdx.cs410J.anturner.Project1IT)  Time elapsed: 0.023 s  <<< ERROR!
+java.lang.IllegalArgumentException: Error while invoking main method of edu.pdx.cs410J.anturner.Project1
+	at edu.pdx.cs410J.anturner.Project1IT.invokeMain(Project1IT.java:19)
+	at edu.pdx.cs410J.anturner.Project1IT.testHappyPathWithPrint(Project1IT.java:87)
+Caused by: java.lang.reflect.InvocationTargetException
+	at edu.pdx.cs410J.anturner.Project1IT.invokeMain(Project1IT.java:19)
+	at edu.pdx.cs410J.anturner.Project1IT.testHappyPathWithPrint(Project1IT.java:87)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 5
+	at edu.pdx.cs410J.anturner.Project1IT.invokeMain(Project1IT.java:19)
+	at edu.pdx.cs410J.anturner.Project1IT.testHappyPathWithPrint(Project1IT.java:87)
+
+testHappyPathWithReadMeAsFith(edu.pdx.cs410J.anturner.Project1IT)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Error while invoking main method of edu.pdx.cs410J.anturner.Project1
+	at edu.pdx.cs410J.anturner.Project1IT.invokeMain(Project1IT.java:19)
+	at edu.pdx.cs410J.anturner.Project1IT.testHappyPathWithReadMeAsFith(Project1IT.java:103)
+Caused by: java.lang.reflect.InvocationTargetException
+	at edu.pdx.cs410J.anturner.Project1IT.invokeMain(Project1IT.java:19)
+	at edu.pdx.cs410J.anturner.Project1IT.testHappyPathWithReadMeAsFith(Project1IT.java:103)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 6
+	at edu.pdx.cs410J.anturner.Project1IT.invokeMain(Project1IT.java:19)
+	at edu.pdx.cs410J.anturner.Project1IT.testHappyPathWithReadMeAsFith(Project1IT.java:103)
+

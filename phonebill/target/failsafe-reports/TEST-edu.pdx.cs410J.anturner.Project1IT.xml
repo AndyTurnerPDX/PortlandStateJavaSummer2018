@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" name="edu.pdx.cs410J.anturner.Project1IT" time="0.129" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" name="edu.pdx.cs410J.anturner.Project1IT" time="0.121" tests="6" errors="2" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/an_d/Documents/school/2018 Q2/git/PortlandStateJavaSummer2018/phonebill/target/surefire/surefirebooter2527180092467793978.jar /Users/an_d/Documents/school/2018 Q2/git/PortlandStateJavaSummer2018/phonebill/target/surefire 2018-07-16T21-40-55_435-jvmRun1 surefire4389679344420523884tmp surefire_01458638777507624172tmp"/>
+    <property name="sun.java.command" value="/Users/an_d/Documents/school/2018 Q2/git/PortlandStateJavaSummer2018/phonebill/target/surefire/surefirebooter1478343767560433346.jar /Users/an_d/Documents/school/2018 Q2/git/PortlandStateJavaSummer2018/phonebill/target/surefire 2018-07-18T21-07-24_820-jvmRun1 surefire8610125630391282748tmp surefire_01433436148558420708tmp"/>
     <property name="http.nonProxyHosts" value="127.0.0.1|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="http.port" value=""/>
@@ -35,7 +35,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/an_d/Documents/school/2018 Q2/git/PortlandStateJavaSummer2018/phonebill/target/surefire/surefirebooter2527180092467793978.jar"/>
+    <property name="surefire.real.class.path" value="/Users/an_d/Documents/school/2018 Q2/git/PortlandStateJavaSummer2018/phonebill/target/surefire/surefirebooter1478343767560433346.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="127.0.0.1|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="10.0.1+10"/>
@@ -63,9 +63,32 @@
     <property name="java.class.version" value="54.0"/>
     <property name="socksNonProxyHosts" value="127.0.0.1|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="testWithQuoteWithTwoNameCommandLineArguments" classname="edu.pdx.cs410J.anturner.Project1IT" time="0.029"/>
-  <testcase name="testHappyPathWithPrint" classname="edu.pdx.cs410J.anturner.Project1IT" time="0.03"/>
+  <testcase name="testWithQuoteWithTwoNameCommandLineArguments" classname="edu.pdx.cs410J.anturner.Project1IT" time="0.036"/>
+  <testcase name="testHappyPathWithPrint" classname="edu.pdx.cs410J.anturner.Project1IT" time="0.023">
+    <error message="Error while invoking main method of edu.pdx.cs410J.anturner.Project1" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Error while invoking main method of edu.pdx.cs410J.anturner.Project1
+	at edu.pdx.cs410J.anturner.Project1IT.invokeMain(Project1IT.java:19)
+	at edu.pdx.cs410J.anturner.Project1IT.testHappyPathWithPrint(Project1IT.java:87)
+Caused by: java.lang.reflect.InvocationTargetException
+	at edu.pdx.cs410J.anturner.Project1IT.invokeMain(Project1IT.java:19)
+	at edu.pdx.cs410J.anturner.Project1IT.testHappyPathWithPrint(Project1IT.java:87)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 5
+	at edu.pdx.cs410J.anturner.Project1IT.invokeMain(Project1IT.java:19)
+	at edu.pdx.cs410J.anturner.Project1IT.testHappyPathWithPrint(Project1IT.java:87)
+</error>
+  </testcase>
   <testcase name="testNoCommandLineArguments" classname="edu.pdx.cs410J.anturner.Project1IT" time="0"/>
-  <testcase name="testNoQuoteWithNameCommandLineArguments" classname="edu.pdx.cs410J.anturner.Project1IT" time="0.002"/>
+  <testcase name="testNoQuoteWithNameCommandLineArguments" classname="edu.pdx.cs410J.anturner.Project1IT" time="0.001"/>
   <testcase name="testWithQuoteWithOneNameCommandLineArguments" classname="edu.pdx.cs410J.anturner.Project1IT" time="0"/>
+  <testcase name="testHappyPathWithReadMeAsFith" classname="edu.pdx.cs410J.anturner.Project1IT" time="0.001">
+    <error message="Error while invoking main method of edu.pdx.cs410J.anturner.Project1" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Error while invoking main method of edu.pdx.cs410J.anturner.Project1
+	at edu.pdx.cs410J.anturner.Project1IT.invokeMain(Project1IT.java:19)
+	at edu.pdx.cs410J.anturner.Project1IT.testHappyPathWithReadMeAsFith(Project1IT.java:103)
+Caused by: java.lang.reflect.InvocationTargetException
+	at edu.pdx.cs410J.anturner.Project1IT.invokeMain(Project1IT.java:19)
+	at edu.pdx.cs410J.anturner.Project1IT.testHappyPathWithReadMeAsFith(Project1IT.java:103)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 6
+	at edu.pdx.cs410J.anturner.Project1IT.invokeMain(Project1IT.java:19)
+	at edu.pdx.cs410J.anturner.Project1IT.testHappyPathWithReadMeAsFith(Project1IT.java:103)
+</error>
+  </testcase>
 </testsuite>
