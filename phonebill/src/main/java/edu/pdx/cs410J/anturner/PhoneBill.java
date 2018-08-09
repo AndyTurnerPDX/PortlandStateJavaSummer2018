@@ -17,8 +17,10 @@ public class PhoneBill extends AbstractPhoneBill {
 
     public PhoneBill() {}
 
-    public PhoneBill(String name, ArrayList<String> calls) {
-        customerName = name;
+    public PhoneBill(String name, PhoneCall passedCall) {
+        this.customerName = name;
+        this.calls = new ArrayList<PhoneCall>();
+        this.calls.add(passedCall);
 
     }
 
@@ -33,16 +35,16 @@ public class PhoneBill extends AbstractPhoneBill {
 
     @Override
     public void addPhoneCall(AbstractPhoneCall abstractPhoneCall) {
-
+        this.calls.add((PhoneCall) abstractPhoneCall);
     }
 
     @Override
     public Collection getPhoneCalls() {
-        return null;
+        return this.calls;
     }
 
     public void print() {
-        System.out.println(getCustomer());
+        System.out.println(this.calls.toString());
     }
 
 }

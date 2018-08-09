@@ -15,45 +15,71 @@ public class Project1 {
 
     public static void main(String[] args) {
 
-        PhoneCall call = new PhoneCall();  // Refer to one of Dave's classes so that we can be sure it is on the classpath
+        String tempName = null;
+        String tempCaller = null;
+        String tempCallee = null;
+        String tempStart = null;
+        String tempEnd = null;
 
-        PhoneBill bill = new PhoneBill();
+        PhoneCall call;     // Refer to one of Dave's classes so that we can be sure it is on the classpath
 
-        if(args.length < 4){
+        PhoneBill bill;
+
+        if(args.length == 1){
+            if(args[0].contains("-R"))
+                System.out.println("This is a PhoneBook Application");
+        }
+        else if(args.length < 4){
             System.err.println("Missing command line arguments");
             System.exit(1);
         }
-        if(args[0] != null){
-            bill.setCustomerName(args[0]);
-        }
-        if(args[1] != null){
+        else if(args.length >= 5){
 
-        }
-        if(args[2] != null){
+            if(args[0] != null){
+                tempName = args[0];
+            }
+            if(args[1] != null){
+                tempCaller = args[1];
+            }
+            if(args[2] != null){
+                tempCallee = args[2];
+            }
+            if(args[3] != null){
+                tempStart = args[3];
+            }
+            if(args[4] != null){
+                tempEnd = args[4];
+            }
 
-        }
-        if(args[3] != null){
+            call = new PhoneCall(tempCaller, tempCallee, tempStart, tempEnd);  // Refer to one of Dave's classes so that we can be sure it is on the classpath
 
-        }
-        if(args[5] != null){
-            if(args[5].contains("-p")) {
-                bill.print();
-            }
-            if(args[5].contains("-r")){
-                System.out.println("Read Me Command");
-            }
-        }
-        if(args[6] != null){
-            if(args[6].contains("-p")) {
-                bill.print();
-            }
-            if(args[6].contains("-r")){
-                System.out.println("Read Me Command");
+            bill = new PhoneBill(tempName, call);
+
+
+            if (args.length >= 6) {
+                if (args[5] != null) {
+                    if (args[5].contains("-p")) {
+                        bill.print();
+                    }
+                    if (args[5].contains("-r")) {
+                        System.out.println("This is a PhoneBook Application");
+                    }
+                }
+                if(args.length >= 6){
+                    if (args[6] != null) {
+                        if (args[6].contains("-p")) {
+                            bill.print();
+                        }
+                        if (args[6].contains("-r")) {
+                            System.out.println("This is a PhoneBook Application");
+                        }
+                    }
+                }
             }
         }
 
-        for(String arg : args)
-            System.out.println(arg);
+//        for(String arg : args)
+//            System.out.println(arg);
         System.exit(1);
     }
 

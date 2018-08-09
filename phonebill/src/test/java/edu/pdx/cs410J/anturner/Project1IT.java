@@ -44,31 +44,6 @@ public class Project1IT extends InvokeMainTestCase {
     }
 
     /**
-     * Tests that invoking the main method with no arguments issues an error
-     */
-    @Test
-    public void testWithQuoteWithOneNameCommandLineArguments() {
-
-        String noQuoteAroundName = "Andy Turner";
-        MainMethodResult result = invokeMain(noQuoteAroundName);
-        assertThat(result.getExitCode(), equalTo(1));
-        //assertThat(result.getTextWrittenToStandardError(), containsString("Missing command line arguments"));
-        System.out.println(result.getTextWrittenToStandardOut());
-    }
-
-    /**
-     * Tests that invoking the main method with no arguments issues an error
-     */
-    @Test
-    public void testWithQuoteWithTwoNameCommandLineArguments() {
-
-        String withQuoteAroundName = "\"Andy Turner\"";
-        MainMethodResult result = invokeMain(withQuoteAroundName);
-        assertThat(result.getExitCode(), equalTo(1));
-        assertThat(result.getTextWrittenToStandardError(), containsString("Missing command line arguments"));
-    }
-
-    /**
      * Tests that invoking the main method with happy path arguments
      */
     @Test
@@ -99,10 +74,12 @@ public class Project1IT extends InvokeMainTestCase {
         String arg3 = "1/15/2018 19:40";
         String arg4 = "1/15/2018 19:40";
         String arg5 = "-readme";
+        String arg6 = "-p";
 
-        MainMethodResult result = invokeMain(arg0, arg1, arg2, arg3, arg4, arg5); // , arg3, arg4);
+        MainMethodResult result = invokeMain(arg0, arg1, arg2, arg3, arg4, arg5, arg6); // , arg3, arg4);
 
-        //assertThat(result.getTextWrittenToStandardOut(), containsString("read"));
+        System.out.println(result.getTextWrittenToStandardOut());
+        assertThat(result.getTextWrittenToStandardOut(), containsString("This"));
     }
 
 

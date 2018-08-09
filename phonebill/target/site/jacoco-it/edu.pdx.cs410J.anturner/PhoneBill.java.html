@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PhoneBill.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">CS410J Phone Bill Project</a> &gt; <a href="index.source.html" class="el_package">edu.pdx.cs410J.anturner</a> &gt; <span class="el_source">PhoneBill.java</span></div><h1>PhoneBill.java</h1><pre class="source lang-java linenums">package edu.pdx.cs410J.anturner;
+import edu.pdx.cs410J.AbstractPhoneBill;
+import edu.pdx.cs410J.AbstractPhoneCall;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+/**
+ * PhoneBill has a customer name and consists of multiple PhoneCalls.
+ */
+
+
+public class PhoneBill extends AbstractPhoneBill {
+
+    private String customerName;
+    ArrayList&lt;PhoneCall&gt; calls;
+
+<span class="nc" id="L18">    public PhoneBill() {}</span>
+
+<span class="fc" id="L20">    public PhoneBill(String name, PhoneCall passedCall) {</span>
+<span class="fc" id="L21">        this.customerName = name;</span>
+<span class="fc" id="L22">        this.calls = new ArrayList&lt;PhoneCall&gt;();</span>
+<span class="fc" id="L23">        this.calls.add(passedCall);</span>
+
+<span class="fc" id="L25">    }</span>
+
+    public void setCustomerName(String passName) {
+<span class="nc" id="L28">        customerName = passName;</span>
+<span class="nc" id="L29">    }</span>
+
+    @Override
+    public String getCustomer() {
+<span class="nc" id="L33">        return customerName;</span>
+    }
+
+    @Override
+    public void addPhoneCall(AbstractPhoneCall abstractPhoneCall) {
+<span class="nc" id="L38">        this.calls.add((PhoneCall) abstractPhoneCall);</span>
+<span class="nc" id="L39">    }</span>
+
+    @Override
+    public Collection getPhoneCalls() {
+<span class="nc" id="L43">        return this.calls;</span>
+    }
+
+    public void print() {
+<span class="fc" id="L47">        System.out.println(this.calls.toString());</span>
+<span class="fc" id="L48">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>
