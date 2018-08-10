@@ -7,6 +7,7 @@ import java.util.Collection;
 
 /**
  * PhoneBill has a customer name and consists of multiple PhoneCalls.
+ *
  */
 
 
@@ -15,37 +16,60 @@ public class PhoneBill extends AbstractPhoneBill {
     private String customerName;
     ArrayList&lt;PhoneCall&gt; calls;
 
-<span class="nc" id="L18">    public PhoneBill() {}</span>
+<span class="nc" id="L19">    public PhoneBill() {}</span>
 
-<span class="fc" id="L20">    public PhoneBill(String name, PhoneCall passedCall) {</span>
-<span class="fc" id="L21">        this.customerName = name;</span>
-<span class="fc" id="L22">        this.calls = new ArrayList&lt;PhoneCall&gt;();</span>
-<span class="fc" id="L23">        this.calls.add(passedCall);</span>
+    /**
+     *
+     * @param name passed in customer name
+     * @param passedCall passed in phone call
+     */
+<span class="fc" id="L26">    public PhoneBill(String name, PhoneCall passedCall) {</span>
+<span class="fc" id="L27">        this.customerName = name;</span>
+<span class="fc" id="L28">        this.calls = new ArrayList&lt;PhoneCall&gt;();</span>
+<span class="fc" id="L29">        this.calls.add(passedCall);</span>
 
-<span class="fc" id="L25">    }</span>
+<span class="fc" id="L31">    }</span>
 
+    /**
+     * @param passName sets customerName to the passed in Name
+     */
     public void setCustomerName(String passName) {
-<span class="nc" id="L28">        customerName = passName;</span>
-<span class="nc" id="L29">    }</span>
+<span class="nc" id="L37">        customerName = passName;</span>
+<span class="nc" id="L38">    }</span>
 
+    /**
+     *
+     * @return returns customerName
+     */
     @Override
     public String getCustomer() {
-<span class="nc" id="L33">        return customerName;</span>
+<span class="nc" id="L46">        return customerName;</span>
     }
 
+    /**
+     *
+     * @param abstractPhoneCall adds a phonecall
+     */
     @Override
     public void addPhoneCall(AbstractPhoneCall abstractPhoneCall) {
-<span class="nc" id="L38">        this.calls.add((PhoneCall) abstractPhoneCall);</span>
-<span class="nc" id="L39">    }</span>
+<span class="nc" id="L55">        this.calls.add((PhoneCall) abstractPhoneCall);</span>
+<span class="nc" id="L56">    }</span>
 
+    /**
+     *
+     * @return returns calls in the list
+     */
     @Override
     public Collection getPhoneCalls() {
-<span class="nc" id="L43">        return this.calls;</span>
+<span class="nc" id="L64">        return this.calls;</span>
     }
 
+    /**
+     * prints the customer name and the calls using to string
+     */
     public void print() {
-<span class="fc" id="L47">        System.out.println(this.calls.toString());</span>
-<span class="fc" id="L48">    }</span>
+<span class="fc" id="L71">        System.out.println(this.customerName + &quot; &quot; + this.calls.toString());</span>
+<span class="fc" id="L72">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

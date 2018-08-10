@@ -1,7 +1,5 @@
 package edu.pdx.cs410J.anturner;
 
-import java.util.Scanner;
-
 /**
  * The main class for the CS410J Phone Bill Project
  *
@@ -13,7 +11,26 @@ import java.util.Scanner;
  */
 public class Project1 {
 
+
+    /**
+     *
+     * @param args are the arguments being passed in an on to temp variables.
+     *             If valid the program will pass them onto phonecall and phonebill constructor
+     *
+     *
+     */
     public static void main(String[] args) {
+
+        String[] readMe = new String[10];
+        readMe[0] = "This is a Phone Bill Application:";
+        readMe[1] = "It is meant to help you keep track of the phone calls you have with another subscriber";
+        readMe[2] = "The details to be provided for each phone call should be...";
+        readMe[3] = "Your phone number, the number of the caller you're reaching out to.";
+        readMe[4] = "The date and time of when the phone call started";
+        readMe[5] = "And the date and time of when the phone call ended.";
+        readMe[6] = "If you would like to see the results of your input add the argument -print";
+        readMe[7] = "If any input you have provided is invalid you will recieve and error message";
+        readMe[8] = "Happy dialing!";
 
         String tempName = null;
         String tempCaller = null;
@@ -21,65 +38,63 @@ public class Project1 {
         String tempStart = null;
         String tempEnd = null;
 
+        boolean readMeFlag = false;
+        boolean printFlag = false;
+
         PhoneCall call;     // Refer to one of Dave's classes so that we can be sure it is on the classpath
 
         PhoneBill bill;
 
-        if(args.length == 1){
-            if(args[0].contains("-R"))
-                System.out.println("This is a PhoneBook Application");
-        }
-        else if(args.length < 4){
+        if(args.length == 0) {
             System.err.println("Missing command line arguments");
-            System.exit(1);
+            System.exit(0);
         }
-        else if(args.length >= 5){
 
-            if(args[0] != null){
-                tempName = args[0];
+        for(String a : args){
+            if(a.charAt(0) == '-') {
+                if (a.contains("readme"))
+                    readMeFlag = true;
+                else if (a.contains("print"))
+                    printFlag = true;
+                else
+                    System.err.println("Invalid Comand Line Argument");
             }
-            if(args[1] != null){
-                tempCaller = args[1];
-            }
-            if(args[2] != null){
-                tempCallee = args[2];
-            }
-            if(args[3] != null){
-                tempStart = args[3];
-            }
-            if(args[4] != null){
-                tempEnd = args[4];
+            else {
+
+                if(tempName == null)
+                    tempName = a;
+                else if(tempCaller == null)
+                    tempCaller = a;
+                else if(tempCallee == null)
+                    tempCallee = a;
+                else if(tempStart == null)
+                    tempStart = a;
+                else if(tempEnd == null)
+                    tempEnd = a;
+                else {
+                    System.err.println("Invalid Comand Line Argument");
+                    System.exit(0);
+                }
             }
 
+
+        }
+
+        if(readMeFlag == true)
+            System.out.println("This is a phonebook application");
+
+        try {
             call = new PhoneCall(tempCaller, tempCallee, tempStart, tempEnd);  // Refer to one of Dave's classes so that we can be sure it is on the classpath
-
             bill = new PhoneBill(tempName, call);
 
+            if(printFlag == true)
+                bill.print();
 
-            if (args.length >= 6) {
-                if (args[5] != null) {
-                    if (args[5].contains("-p")) {
-                        bill.print();
-                    }
-                    if (args[5].contains("-r")) {
-                        System.out.println("This is a PhoneBook Application");
-                    }
-                }
-                if(args.length >= 6){
-                    if (args[6] != null) {
-                        if (args[6].contains("-p")) {
-                            bill.print();
-                        }
-                        if (args[6].contains("-r")) {
-                            System.out.println("This is a PhoneBook Application");
-                        }
-                    }
-                }
-            }
+        }catch (IllegalArgumentException e){
+            System.out.println(e.getMessage());
         }
 
-//        for(String arg : args)
-//            System.out.println(arg);
+
         System.exit(1);
     }
 

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Project1.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">CS410J Phone Bill Project</a> &gt; <a href="index.source.html" class="el_package">edu.pdx.cs410J.anturner</a> &gt; <span class="el_source">Project1.java</span></div><h1>Project1.java</h1><pre class="source lang-java linenums">package edu.pdx.cs410J.anturner;
 
-import java.util.Scanner;
-
 /**
  * The main class for the CS410J Phone Bill Project
  *
@@ -11,77 +9,94 @@ import java.util.Scanner;
  * of the PhoneCall returned by its toString method.
  *
  */
-<span class="nc" id="L14">public class Project1 {</span>
+<span class="nc" id="L12">public class Project1 {</span>
 
+
+    /**
+     *
+     * @param args are the arguments being passed in an on to temp variables.
+     *             If valid the program will pass them onto phonecall and phonebill constructor
+     *
+     *
+     */
     public static void main(String[] args) {
 
-<span class="fc" id="L18">        String tempName = null;</span>
-<span class="fc" id="L19">        String tempCaller = null;</span>
-<span class="fc" id="L20">        String tempCallee = null;</span>
-<span class="fc" id="L21">        String tempStart = null;</span>
-<span class="fc" id="L22">        String tempEnd = null;</span>
+<span class="fc" id="L24">        String[] readMe = new String[10];</span>
+<span class="fc" id="L25">        readMe[0] = &quot;This is a Phone Bill Application:&quot;;</span>
+<span class="fc" id="L26">        readMe[1] = &quot;It is meant to help you keep track of the phone calls you have with another subscriber&quot;;</span>
+<span class="fc" id="L27">        readMe[2] = &quot;The details to be provided for each phone call should be...&quot;;</span>
+<span class="fc" id="L28">        readMe[3] = &quot;Your phone number, the number of the caller you're reaching out to.&quot;;</span>
+<span class="fc" id="L29">        readMe[4] = &quot;The date and time of when the phone call started&quot;;</span>
+<span class="fc" id="L30">        readMe[5] = &quot;And the date and time of when the phone call ended.&quot;;</span>
+<span class="fc" id="L31">        readMe[6] = &quot;If you would like to see the results of your input add the argument -print&quot;;</span>
+<span class="fc" id="L32">        readMe[7] = &quot;If any input you have provided is invalid you will recieve and error message&quot;;</span>
+<span class="fc" id="L33">        readMe[8] = &quot;Happy dialing!&quot;;</span>
+
+<span class="fc" id="L35">        String tempName = null;</span>
+<span class="fc" id="L36">        String tempCaller = null;</span>
+<span class="fc" id="L37">        String tempCallee = null;</span>
+<span class="fc" id="L38">        String tempStart = null;</span>
+<span class="fc" id="L39">        String tempEnd = null;</span>
+
+<span class="fc" id="L41">        boolean readMeFlag = false;</span>
+<span class="fc" id="L42">        boolean printFlag = false;</span>
 
         PhoneCall call;     // Refer to one of Dave's classes so that we can be sure it is on the classpath
 
         PhoneBill bill;
 
-<span class="pc bpc" id="L28" title="1 of 2 branches missed.">        if(args.length == 1){</span>
-<span class="nc bnc" id="L29" title="All 2 branches missed.">            if(args[0].contains(&quot;-R&quot;))</span>
-<span class="nc" id="L30">                System.out.println(&quot;This is a PhoneBook Application&quot;);</span>
+<span class="fc bfc" id="L48" title="All 2 branches covered.">        if(args.length == 0) {</span>
+<span class="fc" id="L49">            System.err.println(&quot;Missing command line arguments&quot;);</span>
+<span class="nc" id="L50">            System.exit(0);</span>
         }
-<span class="fc bfc" id="L32" title="All 2 branches covered.">        else if(args.length &lt; 4){</span>
-<span class="fc" id="L33">            System.err.println(&quot;Missing command line arguments&quot;);</span>
-<span class="nc" id="L34">            System.exit(1);</span>
-        }
-<span class="pc bpc" id="L36" title="1 of 2 branches missed.">        else if(args.length &gt;= 5){</span>
 
-<span class="pc bpc" id="L38" title="1 of 2 branches missed.">            if(args[0] != null){</span>
-<span class="fc" id="L39">                tempName = args[0];</span>
+<span class="fc bfc" id="L53" title="All 2 branches covered.">        for(String a : args){</span>
+<span class="fc bfc" id="L54" title="All 2 branches covered.">            if(a.charAt(0) == '-') {</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">                if (a.contains(&quot;readme&quot;))</span>
+<span class="fc" id="L56">                    readMeFlag = true;</span>
+<span class="fc bfc" id="L57" title="All 2 branches covered.">                else if (a.contains(&quot;print&quot;))</span>
+<span class="fc" id="L58">                    printFlag = true;</span>
+                else
+<span class="fc" id="L60">                    System.err.println(&quot;Invalid Comand Line Argument&quot;);</span>
             }
-<span class="pc bpc" id="L41" title="1 of 2 branches missed.">            if(args[1] != null){</span>
-<span class="fc" id="L42">                tempCaller = args[1];</span>
-            }
-<span class="pc bpc" id="L44" title="1 of 2 branches missed.">            if(args[2] != null){</span>
-<span class="fc" id="L45">                tempCallee = args[2];</span>
-            }
-<span class="pc bpc" id="L47" title="1 of 2 branches missed.">            if(args[3] != null){</span>
-<span class="fc" id="L48">                tempStart = args[3];</span>
-            }
-<span class="pc bpc" id="L50" title="1 of 2 branches missed.">            if(args[4] != null){</span>
-<span class="fc" id="L51">                tempEnd = args[4];</span>
-            }
+            else {
 
-<span class="fc" id="L54">            call = new PhoneCall(tempCaller, tempCallee, tempStart, tempEnd);  // Refer to one of Dave's classes so that we can be sure it is on the classpath</span>
-
-<span class="fc" id="L56">            bill = new PhoneBill(tempName, call);</span>
-
-
-<span class="pc bpc" id="L59" title="1 of 2 branches missed.">            if (args.length &gt;= 6) {</span>
-<span class="pc bpc" id="L60" title="1 of 2 branches missed.">                if (args[5] != null) {</span>
-<span class="pc bpc" id="L61" title="1 of 2 branches missed.">                    if (args[5].contains(&quot;-p&quot;)) {</span>
-<span class="nc" id="L62">                        bill.print();</span>
-                    }
-<span class="pc bpc" id="L64" title="1 of 2 branches missed.">                    if (args[5].contains(&quot;-r&quot;)) {</span>
-<span class="fc" id="L65">                        System.out.println(&quot;This is a PhoneBook Application&quot;);</span>
-                    }
-                }
-<span class="pc bpc" id="L68" title="1 of 2 branches missed.">                if(args.length &gt;= 6){</span>
-<span class="pc bpc" id="L69" title="1 of 2 branches missed.">                    if (args[6] != null) {</span>
-<span class="pc bpc" id="L70" title="1 of 2 branches missed.">                        if (args[6].contains(&quot;-p&quot;)) {</span>
-<span class="fc" id="L71">                            bill.print();</span>
-                        }
-<span class="pc bpc" id="L73" title="1 of 2 branches missed.">                        if (args[6].contains(&quot;-r&quot;)) {</span>
-<span class="nc" id="L74">                            System.out.println(&quot;This is a PhoneBook Application&quot;);</span>
-                        }
-                    }
+<span class="fc bfc" id="L64" title="All 2 branches covered.">                if(tempName == null)</span>
+<span class="fc" id="L65">                    tempName = a;</span>
+<span class="fc bfc" id="L66" title="All 2 branches covered.">                else if(tempCaller == null)</span>
+<span class="fc" id="L67">                    tempCaller = a;</span>
+<span class="fc bfc" id="L68" title="All 2 branches covered.">                else if(tempCallee == null)</span>
+<span class="fc" id="L69">                    tempCallee = a;</span>
+<span class="fc bfc" id="L70" title="All 2 branches covered.">                else if(tempStart == null)</span>
+<span class="fc" id="L71">                    tempStart = a;</span>
+<span class="fc bfc" id="L72" title="All 2 branches covered.">                else if(tempEnd == null)</span>
+<span class="fc" id="L73">                    tempEnd = a;</span>
+                else {
+<span class="fc" id="L75">                    System.err.println(&quot;Invalid Comand Line Argument&quot;);</span>
+<span class="nc" id="L76">                    System.exit(0);</span>
                 }
             }
+
+
         }
 
-//        for(String arg : args)
-//            System.out.println(arg);
-<span class="nc" id="L83">        System.exit(1);</span>
-<span class="nc" id="L84">    }</span>
+<span class="fc bfc" id="L83" title="All 2 branches covered.">        if(readMeFlag == true)</span>
+<span class="fc" id="L84">            System.out.println(&quot;This is a phonebook application&quot;);</span>
+
+        try {
+<span class="fc" id="L87">            call = new PhoneCall(tempCaller, tempCallee, tempStart, tempEnd);  // Refer to one of Dave's classes so that we can be sure it is on the classpath</span>
+<span class="fc" id="L88">            bill = new PhoneBill(tempName, call);</span>
+
+<span class="fc bfc" id="L90" title="All 2 branches covered.">            if(printFlag == true)</span>
+<span class="fc" id="L91">                bill.print();</span>
+
+<span class="fc" id="L93">        }catch (IllegalArgumentException e){</span>
+<span class="fc" id="L94">            System.out.println(e.getMessage());</span>
+<span class="fc" id="L95">        }</span>
+
+
+<span class="nc" id="L98">        System.exit(1);</span>
+<span class="nc" id="L99">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

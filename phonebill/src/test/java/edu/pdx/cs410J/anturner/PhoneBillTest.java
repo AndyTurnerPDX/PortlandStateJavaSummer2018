@@ -2,11 +2,6 @@ package edu.pdx.cs410J.anturner;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-
-import static org.hamcrest.CoreMatchers.*;
-import static org.hamcrest.MatcherAssert.assertThat;
-
 /**
  * Unit tests for the {@link PhoneBill} class.
  */
@@ -25,10 +20,10 @@ public class PhoneBillTest {
 
         PhoneBill bill = new PhoneBill(passName, call);
 
-        System.out.println(bill.getPhoneCalls());
+        // System.out.println(bill.getPhoneCalls());
 
         // var pat = new PhoneBill(passName);
-        //assertThat(pat.getCustomer(), equalTo(passName));
+        // assertThat(bill.getCustomer(), equalTo(passName));
     }
 
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.pdx.cs410J.anturner.PhoneCallTest" time="0" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.pdx.cs410J.anturner.PhoneCallTest" time="0.001" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/andy.turner/psu/git/PortlandStateJavaSummer2018/phonebill/target/surefire/surefirebooter9227027024500435398.jar /Users/andy.turner/psu/git/PortlandStateJavaSummer2018/phonebill/target/surefire 2018-08-08T17-18-48_597-jvmRun1 surefire5458389288382533883tmp surefire_018089662281872617068tmp"/>
+    <property name="sun.java.command" value="/Users/andy.turner/psu/git/PortlandStateJavaSummer2018/phonebill/target/surefire/surefirebooter95844967005706018.jar /Users/andy.turner/psu/git/PortlandStateJavaSummer2018/phonebill/target/surefire 2018-08-10T09-55-53_726-jvmRun1 surefire7983735502615125782tmp surefire_016569516671414095374tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/andy.turner/psu/git/PortlandStateJavaSummer2018/phonebill/target/test-classes:/Users/andy.turner/psu/git/PortlandStateJavaSummer2018/phonebill/target/classes:/Users/andy.turner/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/andy.turner/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/andy.turner/.m2/repository/edu/pdx/cs410J/projects/Summer2018/projects-Summer2018.jar:/Users/andy.turner/.m2/repository/edu/pdx/cs410J/projects/Summer2018/projects-Summer2018-tests.jar:"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/andy.turner/psu/git/PortlandStateJavaSummer2018/phonebill/target/surefire/surefirebooter9227027024500435398.jar"/>
+    <property name="surefire.real.class.path" value="/Users/andy.turner/psu/git/PortlandStateJavaSummer2018/phonebill/target/surefire/surefirebooter95844967005706018.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="10.0.1+10"/>
@@ -62,14 +62,8 @@
     <property name="java.class.version" value="54.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="forProject1ItIsOkayIfGetStartTimeReturnsNull" classname="edu.pdx.cs410J.anturner.PhoneCallTest" time="0"/>
-  <testcase name="happyPathPhoneNumber10Dig" classname="edu.pdx.cs410J.anturner.PhoneCallTest" time="0"/>
-  <testcase name="invalidCallerPhoneNumberTooShort" classname="edu.pdx.cs410J.anturner.PhoneCallTest" time="0"/>
-  <testcase name="invalidPhoneNumberBadChars" classname="edu.pdx.cs410J.anturner.PhoneCallTest" time="0"/>
-  <testcase name="testDate" classname="edu.pdx.cs410J.anturner.PhoneCallTest" time="0"/>
-  <testcase name="happyPathPhoneNumber" classname="edu.pdx.cs410J.anturner.PhoneCallTest" time="0"/>
+  <testcase name="testTimeNotValid" classname="edu.pdx.cs410J.anturner.PhoneCallTest" time="0"/>
   <testcase name="setCallerNameNeedsToBeImplemented" classname="edu.pdx.cs410J.anturner.PhoneCallTest" time="0"/>
-  <testcase name="invalidPhoneNumberContLettr" classname="edu.pdx.cs410J.anturner.PhoneCallTest" time="0"/>
-  <testcase name="invalidPhoneNumberTooLong" classname="edu.pdx.cs410J.anturner.PhoneCallTest" time="0"/>
   <testcase name="initiallyAllPhoneCallsHaveTheSameCallee" classname="edu.pdx.cs410J.anturner.PhoneCallTest" time="0"/>
+  <testcase name="testCallNumberContNonInt" classname="edu.pdx.cs410J.anturner.PhoneCallTest" time="0"/>
 </testsuite>
