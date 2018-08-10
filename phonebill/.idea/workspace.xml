@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="693b2ab2-1f23-4c24-a9f9-304500c2c752" name="Default" comment="">
+    <list default="true" id="693b2ab2-1f23-4c24-a9f9-304500c2c752" name="Default" comment="Proper read me.">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/PhoneBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/PhoneBill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/PhoneCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/PhoneCall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/PhoneBillTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/PhoneBillTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/PhoneCallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/PhoneCallTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/Project1IT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/Project1IT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/pdx/cs410J/anturner/PhoneBill.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/pdx/cs410J/anturner/PhoneBill.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/pdx/cs410J/anturner/PhoneCall.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/pdx/cs410J/anturner/PhoneCall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/pdx/cs410J/anturner/Project1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/pdx/cs410J/anturner/Project1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/TEST-edu.pdx.cs410J.anturner.Project1IT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/TEST-edu.pdx.cs410J.anturner.Project1IT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/edu.pdx.cs410J.anturner.Project1IT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/edu.pdx.cs410J.anturner.Project1IT.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/failsafe-summary.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/failsafe-summary.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/it-classes/edu/pdx/cs410J/anturner/Project1IT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/it-classes/edu/pdx/cs410J/anturner/Project1IT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebill/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phonebill/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/Project1IT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/Project2IT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/pdx/cs410J/anturner/Project1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/TEST-edu.pdx.cs410J.anturner.Project1IT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/edu.pdx.cs410J.anturner.Project1IT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/it-classes/edu/pdx/cs410J/anturner/Project1IT.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jacoco-it.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco-it.exec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/original-phonebill-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-phonebill-1.0-SNAPSHOT.jar" afterDir="false" />
@@ -24,12 +20,8 @@
       <change beforePath="$PROJECT_DIR$/target/phonebill-1.0-SNAPSHOT-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/phonebill-1.0-SNAPSHOT-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/phonebill-1.0-SNAPSHOT-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/phonebill-1.0-SNAPSHOT-tests.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/phonebill-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/phonebill-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco-it/edu.pdx.cs410J.anturner/PhoneBill.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco-it/edu.pdx.cs410J.anturner/PhoneBill.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco-it/edu.pdx.cs410J.anturner/PhoneBill.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco-it/edu.pdx.cs410J.anturner/PhoneBill.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco-it/edu.pdx.cs410J.anturner/PhoneCall.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco-it/edu.pdx.cs410J.anturner/PhoneCall.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco-it/edu.pdx.cs410J.anturner/PhoneCall.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco-it/edu.pdx.cs410J.anturner/PhoneCall.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco-it/edu.pdx.cs410J.anturner/Project1.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco-it/edu.pdx.cs410J.anturner/Project1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco-it/edu.pdx.cs410J.anturner/Project1.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco-it/edu.pdx.cs410J.anturner/Project1.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco-it/edu.pdx.cs410J.anturner/Project1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco-it/edu.pdx.cs410J.anturner/Project1.java.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/jacoco-it/edu.pdx.cs410J.anturner/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco-it/edu.pdx.cs410J.anturner/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/jacoco-it/edu.pdx.cs410J.anturner/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco-it/edu.pdx.cs410J.anturner/index.source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/jacoco-it/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco-it/index.html" afterDir="false" />
@@ -40,10 +32,7 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.pdx.cs410J.anturner.PhoneCallTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.pdx.cs410J.anturner.PhoneCallTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.pdx.cs410J.anturner.PhoneBillTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.pdx.cs410J.anturner.PhoneBillTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.pdx.cs410J.anturner.PhoneCallTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.pdx.cs410J.anturner.PhoneCallTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/pdx/cs410J/anturner/PhoneBillTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/pdx/cs410J/anturner/PhoneBillTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/pdx/cs410J/anturner/PhoneCallTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/pdx/cs410J/anturner/PhoneCallTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/pdx/cs410J/anturner/Project1IT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/pdx/cs410J/anturner/Project1IT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../student/src/test/java/edu/pdx/cs410J/whitlock/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../student/src/test/java/edu/pdx/cs410J/whitlock/StudentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/pdx/cs410J/anturner/Project1IT.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,24 +65,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6054" />
+          <entry key="dummy" value="8" />
+          <entry key="java" value="6079" />
+          <entry key="txt" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6054" />
+          <entry key="JAVA" value="6079" />
+          <entry key="PLAIN_TEXT" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="34" />
-          <entry key="java" value="13" />
+          <entry key="java" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="34" />
-          <entry key="JAVA" value="13" />
+          <entry key="JAVA" value="14" />
         </counts>
       </usages-collector>
     </session>
@@ -103,20 +95,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project1.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="17" column="95" selection-start-line="17" selection-start-column="95" selection-end-line="17" selection-end-column="95" />
+            <state relative-caret-position="345">
+              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/Project1IT.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/Project2IT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+            <state relative-caret-position="540">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#570#571#0" expanded="true" />
@@ -126,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/PhoneBill.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="67" column="61" selection-start-line="67" selection-start-column="61" selection-end-line="67" selection-end-column="61" />
+            <state relative-caret-position="16">
+              <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#804#805#0" expanded="true" />
@@ -151,7 +143,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/PhoneCall.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2880">
+            <state relative-caret-position="177">
               <caret line="192" column="4" selection-start-line="192" selection-start-column="4" selection-end-line="192" selection-end-column="4" />
               <folding>
                 <element signature="e#6718#6719#0" expanded="true" />
@@ -230,10 +222,11 @@
         <option value="$PROJECT_DIR$/../student/src/test/java/edu/pdx/cs410J/whitlock/StudentTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/PhoneCallTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/PhoneBillTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/Project1IT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project1.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/PhoneCall.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/PhoneBill.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project1.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/Project1IT.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project2.java" />
       </list>
     </option>
   </component>
@@ -321,7 +314,7 @@
     <property name="SearchEverywhereHistoryKey" value="abstractphone&#9;PSI&#9;JAVA://edu.pdx.cs410J.AbstractPhoneCall" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533919382604" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533928216622" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -346,7 +339,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Project1IT.test10MissingEndTime">
+  <component name="RunManager" selected="JUnit.Project2IT.testHappyPathWithReadMeAsFith">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -361,7 +354,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PhoneBillTest.customerNameIsPat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Project2IT.test10MissingEndTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="phonebill" />
       <extension name="coverage">
         <pattern>
@@ -370,24 +363,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.pdx.cs410J.anturner" />
-      <option name="MAIN_CLASS_NAME" value="edu.pdx.cs410J.anturner.PhoneBillTest" />
-      <option name="METHOD_NAME" value="customerNameIsPat" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Project1IT.test10MissingEndTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="phonebill" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.pdx.cs410J.anturner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.pdx.cs410J.anturner" />
-      <option name="MAIN_CLASS_NAME" value="edu.pdx.cs410J.anturner.Project1IT" />
+      <option name="MAIN_CLASS_NAME" value="edu.pdx.cs410J.anturner.Project2IT" />
       <option name="METHOD_NAME" value="test10MissingEndTime" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -395,7 +371,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Project1IT.test7UknownCommandLineArgument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Project2IT.test7UknownCommandLineArgument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="phonebill" />
       <extension name="coverage">
         <pattern>
@@ -404,7 +380,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.pdx.cs410J.anturner" />
-      <option name="MAIN_CLASS_NAME" value="edu.pdx.cs410J.anturner.Project1IT" />
+      <option name="MAIN_CLASS_NAME" value="edu.pdx.cs410J.anturner.Project2IT" />
       <option name="METHOD_NAME" value="test7UknownCommandLineArgument" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -412,7 +388,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Project1IT.testHappyPathWithPrint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Project2IT.testHappyPathWithPrint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="phonebill" />
       <extension name="coverage">
         <pattern>
@@ -421,7 +397,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.pdx.cs410J.anturner" />
-      <option name="MAIN_CLASS_NAME" value="edu.pdx.cs410J.anturner.Project1IT" />
+      <option name="MAIN_CLASS_NAME" value="edu.pdx.cs410J.anturner.Project2IT" />
       <option name="METHOD_NAME" value="testHappyPathWithPrint" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -429,7 +405,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Project1IT.testNoCommandLineArguments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Project2IT.testHappyPathWithReadMeAsFith" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="phonebill" />
       <extension name="coverage">
         <pattern>
@@ -438,7 +414,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.pdx.cs410J.anturner" />
-      <option name="MAIN_CLASS_NAME" value="edu.pdx.cs410J.anturner.Project1IT" />
+      <option name="MAIN_CLASS_NAME" value="edu.pdx.cs410J.anturner.Project2IT" />
+      <option name="METHOD_NAME" value="testHappyPathWithReadMeAsFith" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Project2IT.testNoCommandLineArguments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="phonebill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.pdx.cs410J.anturner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.pdx.cs410J.anturner" />
+      <option name="MAIN_CLASS_NAME" value="edu.pdx.cs410J.anturner.Project2IT" />
       <option name="METHOD_NAME" value="testNoCommandLineArguments" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -461,19 +454,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Project1IT.testNoCommandLineArguments" />
-      <item itemvalue="JUnit.PhoneBillTest.customerNameIsPat" />
-      <item itemvalue="JUnit.Project1IT.test7UknownCommandLineArgument" />
-      <item itemvalue="JUnit.Project1IT.testHappyPathWithPrint" />
-      <item itemvalue="JUnit.Project1IT.test10MissingEndTime" />
+      <item itemvalue="JUnit.Project2IT.testNoCommandLineArguments" />
+      <item itemvalue="JUnit.Project2IT.test7UknownCommandLineArgument" />
+      <item itemvalue="JUnit.Project2IT.testHappyPathWithPrint" />
+      <item itemvalue="JUnit.Project2IT.test10MissingEndTime" />
+      <item itemvalue="JUnit.Project2IT.testHappyPathWithReadMeAsFith" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Project1IT.test10MissingEndTime" />
-        <item itemvalue="JUnit.Project1IT.testHappyPathWithPrint" />
-        <item itemvalue="JUnit.Project1IT.test7UknownCommandLineArgument" />
-        <item itemvalue="JUnit.Project1IT.testNoCommandLineArguments" />
-        <item itemvalue="JUnit.PhoneBillTest.customerNameIsPat" />
+        <item itemvalue="JUnit.Project2IT.testHappyPathWithReadMeAsFith" />
+        <item itemvalue="JUnit.Project2IT.test10MissingEndTime" />
+        <item itemvalue="JUnit.Project2IT.testHappyPathWithPrint" />
+        <item itemvalue="JUnit.Project2IT.test7UknownCommandLineArgument" />
+        <item itemvalue="JUnit.Project2IT.testNoCommandLineArguments" />
       </list>
     </recent_temporary>
   </component>
@@ -495,23 +488,19 @@
       <workItem from="1532131337130" duration="15678000" />
       <workItem from="1532823426094" duration="196000" />
       <workItem from="1532823823103" duration="613000" />
-      <workItem from="1533055870970" duration="33148000" />
+      <workItem from="1533055870970" duration="34653000" />
     </task>
+    <task id="LOCAL-00001" summary="Proper read me.">
+      <created>1533921711458</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1533921711458</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Project1IT_test7UknownCommandLineArgument - 2018.08.10 at 09h 14m 52s.xml">
-      <configuration name="Project1IT.test7UknownCommandLineArgument" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Project1IT_test7UknownCommandLineArgument - 2018.08.10 at 09h 15m 01s.xml">
-      <configuration name="Project1IT.test7UknownCommandLineArgument" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Project1IT_test7UknownCommandLineArgument - 2018.08.10 at 09h 15m 16s.xml">
-      <configuration name="Project1IT.test7UknownCommandLineArgument" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Project1IT_test7UknownCommandLineArgument - 2018.08.10 at 09h 15m 42s.xml">
-      <configuration name="Project1IT.test7UknownCommandLineArgument" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Project1IT_test7UknownCommandLineArgument - 2018.08.10 at 09h 16m 01s.xml">
       <configuration name="Project1IT.test7UknownCommandLineArgument" configurationId="JUnit" />
     </history-entry>
@@ -530,9 +519,21 @@
     <history-entry file="Project1IT_test10MissingEndTime - 2018.08.10 at 09h 20m 23s.xml">
       <configuration name="Project1IT.test10MissingEndTime" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Project1IT_testHappyPathWithReadMeAsFith - 2018.08.10 at 10h 17m 37s.xml">
+      <configuration name="Project1IT.testHappyPathWithReadMeAsFith" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Project1IT_testHappyPathWithReadMeAsFith - 2018.08.10 at 10h 18m 11s.xml">
+      <configuration name="Project1IT.testHappyPathWithReadMeAsFith" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Project1IT_testHappyPathWithReadMeAsFith - 2018.08.10 at 10h 20m 00s.xml">
+      <configuration name="Project1IT.testHappyPathWithReadMeAsFith" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Project1IT_testHappyPathWithReadMeAsFith - 2018.08.10 at 10h 20m 09s.xml">
+      <configuration name="Project1IT.testHappyPathWithReadMeAsFith" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91080000" />
+    <option name="totallyTimeSpent" value="92585000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -547,8 +548,8 @@
     <frame x="0" y="23" width="1440" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992948" visible="true" weight="0.19670959" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.19670959" />
+      <window_info id="Structure" order="1" sideWeight="0.502" side_tool="true" weight="0.19670959" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -558,7 +559,7 @@
       <window_info anchor="bottom" id="Inspection Results" weight="0.3297587" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.74369746" visible="true" weight="0.32841823" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.74369746" weight="0.32841823" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -567,7 +568,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4990991" weight="0.3297769" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.34477827" side_tool="true" weight="0.32841823" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3297587" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -585,6 +586,22 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Proper read me." />
+    <option name="LAST_COMMIT_MESSAGE" value="Proper read me." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project2.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -621,16 +638,6 @@
             <element signature="e#121466#121467#0" expanded="true" />
             <element signature="e#121550#121551#0" expanded="true" />
             <element signature="e#121607#121608#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../student/src/test/java/edu/pdx/cs410J/whitlock/StudentTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="5" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -766,28 +773,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/Project1IT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="17" column="95" selection-start-line="17" selection-start-column="95" selection-end-line="17" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/PhoneCall.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2880">
+        <state relative-caret-position="177">
           <caret line="192" column="4" selection-start-line="192" selection-start-column="4" selection-end-line="192" selection-end-column="4" />
           <folding>
             <element signature="e#6718#6719#0" expanded="true" />
@@ -800,8 +788,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/PhoneBill.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="67" column="61" selection-start-line="67" selection-start-column="61" selection-end-line="67" selection-end-column="61" />
+        <state relative-caret-position="16">
+          <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#804#805#0" expanded="true" />
@@ -815,6 +803,37 @@
             <element signature="e#1434#1435#0" expanded="true" />
             <element signature="e#1517#1518#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../student/src/test/java/edu/pdx/cs410J/whitlock/StudentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1194#1195#0" expanded="true" />
+            <element signature="e#1263#1264#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/Project2IT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
         </state>
       </provider>
     </entry>

@@ -3,13 +3,13 @@ package edu.pdx.cs410J.anturner;
 /**
  * The main class for the CS410J Phone Bill Project
  *
- * Project1 should contain main method that parse the command line,
+ * Project2 should contain main method that parse the command line,
  * creates a PhoneBill and a PhoneCall as specified by the command line,
  * adds the PhoneCall to the PhoneBill, and optionally prints a description
  * of the PhoneCall returned by its toString method.
  *
  */
-public class Project1 {
+public class Project2 {
 
 
     /**
