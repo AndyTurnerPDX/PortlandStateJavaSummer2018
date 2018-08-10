@@ -1,12 +1,12 @@
 package edu.pdx.cs410J.whitlock;
 
 import org.junit.Test;
-
-import java.util.ArrayList;
-
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsEqual.equalTo;
+import java.util.ArrayList;
+
+
 
 /**
  * Unit tests for the Student class.  In addition to the JUnit annotations,

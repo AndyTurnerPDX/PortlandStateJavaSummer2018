@@ -21,7 +21,7 @@ public class Project1 {
      */
     public static void main(String[] args) {
 
-        String[] readMe = new String[10];
+        String[] readMe = new String[9];
         readMe[0] = "This is a Phone Bill Application:";
         readMe[1] = "It is meant to help you keep track of the phone calls you have with another subscriber";
         readMe[2] = "The details to be provided for each phone call should be...";
@@ -80,8 +80,10 @@ public class Project1 {
 
         }
 
-        if(readMeFlag == true)
-            System.out.println("This is a phonebook application");
+        if(readMeFlag == true){
+            for (String r : readMe)
+                System.out.println(r);
+        }
 
         try {
             call = new PhoneCall(tempCaller, tempCallee, tempStart, tempEnd);  // Refer to one of Dave's classes so that we can be sure it is on the classpath
