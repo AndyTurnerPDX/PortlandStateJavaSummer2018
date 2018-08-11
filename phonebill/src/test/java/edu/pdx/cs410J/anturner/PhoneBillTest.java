@@ -26,6 +26,4 @@ public class PhoneBillTest {
         // assertThat(bill.getCustomer(), equalTo(passName));
     }
 
-
-
 }

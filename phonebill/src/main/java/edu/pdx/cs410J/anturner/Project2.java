@@ -37,9 +37,11 @@ public class Project2 {
         String tempCallee = null;
         String tempStart = null;
         String tempEnd = null;
+        String tempFile = null;
 
         boolean readMeFlag = false;
         boolean printFlag = false;
+        boolean textFileFlag = false;
 
         PhoneCall call;     // Refer to one of Dave's classes so that we can be sure it is on the classpath
 
@@ -50,12 +52,19 @@ public class Project2 {
             System.exit(0);
         }
 
-        for(String a : args){
+        for( String a : args){
             if(a.charAt(0) == '-') {
                 if (a.contains("readme"))
                     readMeFlag = true;
                 else if (a.contains("print"))
                     printFlag = true;
+                else if (a.contains("textFile")){
+                    textFileFlag = true;
+                    System.out.println("textFile");
+                    //if()
+                    a = tempFile;
+                    System.out.println(a);
+                }
                 else
                     System.err.println("Invalid Comand Line Argument");
             }

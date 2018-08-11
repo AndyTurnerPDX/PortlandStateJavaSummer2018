@@ -20,6 +20,24 @@ public class Project2IT extends InvokeMainTestCase {
     }
 
     @Test
+    public void test3TestFile(){
+        String arg = "-textFile";
+        String file = "anturner/anturner.txt";
+        String arg0 = "Test6";
+        String arg1 = "123-456-7890";
+        String arg2 = "234-567-8901";
+        String arg3 = "03/03/2018 12:00";
+        String arg4 = "04/04/2018 12:01";
+
+        MainMethodResult result = invokeMain(arg, file, arg0, arg1, arg2, arg3, arg4);
+
+        System.out.println(result.getTextWrittenToStandardOut());
+        //System.out.println(result.getTextWrittenToStandardError());
+        //assertThat(result.getTextWrittenToStandardOut(), containsString("Invalid"));
+
+    }
+
+    @Test
     public void test10MissingEndTime(){
         String arg0 = "Test6";
         String arg1 = "123-456-7890";
