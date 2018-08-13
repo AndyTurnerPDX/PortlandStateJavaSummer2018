@@ -73,62 +73,70 @@ public class PhoneCall extends AbstractPhoneCall {
 <span class="pc bpc" id="L73" title="2 of 4 branches missed.">      if (passTime == &quot;&quot; || passTime == null)</span>
 <span class="nc" id="L74">          throw new IllegalArgumentException(&quot;Invalid time.&quot;);</span>
 <span class="fc bfc" id="L75" title="All 2 branches covered.">      else if (!passTime.contains(&quot;:&quot;))</span>
-<span class="fc" id="L76">          throw new IllegalArgumentException(&quot;Invalid time.&quot;);</span>
-<span class="pc bpc" id="L77" title="1 of 2 branches missed.">      else if (passTime.contains(&quot; &quot;) == false)</span>
-<span class="nc" id="L78">          throw new IllegalArgumentException(&quot;Invalid time.&quot;);</span>
+<span class="fc" id="L76">          throw new IllegalArgumentException(&quot;Time is missing.&quot;);</span>
       else {
 
-<span class="fc" id="L81">          int hours = 0;</span>
-<span class="fc" id="L82">          int minutes = 0;</span>
-<span class="fc" id="L83">          int month = 0;</span>
-<span class="fc" id="L84">          int day = 0;</span>
-<span class="fc" id="L85">          int year = 0;</span>
+<span class="fc" id="L79">          int hours = 0;</span>
+<span class="fc" id="L80">          int minutes = 0;</span>
+<span class="fc" id="L81">          int month = 0;</span>
+<span class="fc" id="L82">          int day = 0;</span>
+<span class="fc" id="L83">          int year = 0;</span>
 
           //  Split the start time String
-<span class="fc" id="L88">          String[] parts = passTime.split(&quot; &quot;);</span>
-<span class="fc" id="L89">          String[] date = parts[0].split(&quot;/&quot;);</span>
-<span class="fc" id="L90">          String[] time = parts[1].split(&quot;:&quot;);</span>
+<span class="fc" id="L86">          String[] parts = passTime.split(&quot; &quot;);</span>
+<span class="fc" id="L87">          String[] date = parts[0].split(&quot;/&quot;);</span>
+<span class="fc" id="L88">          String[] time = parts[1].split(&quot;:&quot;);</span>
 
           //  Initialize time variables hours minutes.
-<span class="pc bpc" id="L93" title="1 of 2 branches missed.">          if(time[0].matches(&quot;[0-9]+&quot;))</span>
-<span class="fc" id="L94">              hours = Integer.parseInt(time[0]);</span>
+<span class="pc bpc" id="L91" title="1 of 2 branches missed.">          if(time[0].matches(&quot;[0-9]+&quot;))</span>
+<span class="fc" id="L92">              hours = Integer.parseInt(time[0]);</span>
           else
-<span class="nc" id="L96">              throw new IllegalArgumentException(&quot;Invalid hours&quot;);</span>
+<span class="nc" id="L94">              throw new IllegalArgumentException(&quot;Hours must contain letters.&quot;);</span>
 
-<span class="fc bfc" id="L98" title="All 2 branches covered.">          if(time[1].matches(&quot;[0-9]+&quot;))</span>
-<span class="fc" id="L99">              minutes = Integer.parseInt(time[1]);</span>
+<span class="fc bfc" id="L96" title="All 2 branches covered.">          if(time[1].matches(&quot;[0-9]+&quot;))</span>
+<span class="fc" id="L97">              minutes = Integer.parseInt(time[1]);</span>
           else
-<span class="fc" id="L101">              throw new IllegalArgumentException(&quot;Invalid minutes&quot;);</span>
+<span class="fc" id="L99">              throw new IllegalArgumentException(&quot;Minutes cannot contain letters.&quot;);</span>
 
-<span class="pc bpc" id="L103" title="1 of 2 branches missed.">          if(date[0].matches(&quot;[0-9]+&quot;))</span>
-<span class="fc" id="L104">              month = Integer.parseInt(date[0]);</span>
+<span class="pc bpc" id="L101" title="1 of 2 branches missed.">          if(date[0].matches(&quot;[0-9]+&quot;))</span>
+<span class="fc" id="L102">              month = Integer.parseInt(date[0]);</span>
           else
-<span class="nc" id="L106">              throw new IllegalArgumentException(&quot;Invalid month&quot;);</span>
+<span class="nc" id="L104">              throw new IllegalArgumentException(&quot;Month cannot contain letters&quot;);</span>
 
-<span class="pc bpc" id="L108" title="1 of 2 branches missed.">          if(date[1].matches(&quot;[0-9]+&quot;))</span>
-<span class="fc" id="L109">              day = Integer.parseInt(date[1]);</span>
+<span class="pc bpc" id="L106" title="1 of 2 branches missed.">          if(date[1].matches(&quot;[0-9]+&quot;))</span>
+<span class="fc" id="L107">              day = Integer.parseInt(date[1]);</span>
           else
-<span class="nc" id="L111">              throw new IllegalArgumentException(&quot;Invalid day&quot;);</span>
+<span class="nc" id="L109">              throw new IllegalArgumentException(&quot;Day cannot contain letters.&quot;);</span>
 
-<span class="pc bpc" id="L113" title="1 of 2 branches missed.">          if(date[2].matches(&quot;[0-9]+&quot;))</span>
-<span class="fc" id="L114">              year = Integer.parseInt(date[2]);</span>
+<span class="pc bpc" id="L111" title="1 of 2 branches missed.">          if(date[2].matches(&quot;[0-9]+&quot;))</span>
+<span class="fc" id="L112">              year = Integer.parseInt(date[2]);</span>
           else
-<span class="nc" id="L116">              throw new IllegalArgumentException(&quot;Invalid year&quot;);</span>
+<span class="nc" id="L114">              throw new IllegalArgumentException(&quot;Year cannot contain letters.&quot;);</span>
 
+<span class="pc bpc" id="L116" title="3 of 6 branches missed.">          if((month == 0) || (day == 0 ) || (year == 0))</span>
+<span class="nc" id="L117">              throw new IllegalArgumentException(&quot;Date is missing.&quot;);</span>
 
           //  Check if time format is valid
-<span class="pc bpc" id="L120" title="4 of 8 branches missed.">          if(month &lt;= 0 || month &gt; 12 || date[0].length() &lt; 1 || date[0].length() &gt; 2  )</span>
-<span class="nc" id="L121">              throw new IllegalArgumentException(&quot;Invalid Month.&quot;);</span>
-<span class="pc bpc" id="L122" title="4 of 8 branches missed.">          if(day &lt;= 0 || day &gt; 31 || date[1].length() &lt; 2 || date[1].length() &gt; 2  )</span>
-<span class="nc" id="L123">              throw new IllegalArgumentException(&quot;Invalid Date.&quot;);</span>
-<span class="pc bpc" id="L124" title="2 of 6 branches missed.">          if(year &lt;= 2016 || date[2].length() &lt; 4 || date[2].length() &gt; 4  )</span>
-<span class="fc" id="L125">              throw new IllegalArgumentException(&quot;Invalid Year.&quot;);</span>
-<span class="pc bpc" id="L126" title="2 of 4 branches missed.">          if (hours &gt; 24 || hours &lt; 0)</span>
-<span class="nc" id="L127">              throw new IllegalArgumentException(&quot;Invalid hours.&quot;);</span>
-<span class="pc bpc" id="L128" title="2 of 4 branches missed.">          if (minutes &gt; 59 || minutes &lt; 0)</span>
-<span class="nc" id="L129">              throw new IllegalArgumentException(&quot;Invalid minutes.&quot;);</span>
+<span class="pc bpc" id="L120" title="1 of 2 branches missed.">          if(month &lt;= 0 )</span>
+<span class="nc" id="L121">              throw new IllegalArgumentException(&quot;Month must be greater than 0.&quot;);</span>
+<span class="pc bpc" id="L122" title="1 of 2 branches missed.">          if(month &gt; 12)</span>
+<span class="nc" id="L123">              throw new IllegalArgumentException(&quot;Month must be less than or equal to 12.&quot;);</span>
+<span class="pc bpc" id="L124" title="2 of 4 branches missed.">          if(date[0].length() &lt; 1 || date[0].length() &gt; 2)</span>
+<span class="nc" id="L125">              throw new IllegalArgumentException(&quot;Moth must be in format M or MM.&quot;);</span>
+<span class="pc bpc" id="L126" title="1 of 2 branches missed.">          if(day &lt;= 0 )</span>
+<span class="nc" id="L127">              throw new IllegalArgumentException(&quot;Day must be at least 1.&quot;);</span>
+<span class="pc bpc" id="L128" title="1 of 2 branches missed.">          if(day &gt; 31)</span>
+<span class="nc" id="L129">              throw new IllegalArgumentException(&quot;Day cannot be greater than 31.&quot;);</span>
+<span class="pc bpc" id="L130" title="2 of 4 branches missed.">          if(date[1].length() &lt; 2 || date[1].length() &gt; 2)</span>
+<span class="nc" id="L131">              throw new IllegalArgumentException(&quot;Day must be in format D or DD.&quot;);</span>
+<span class="pc bpc" id="L132" title="1 of 4 branches missed.">          if(date[2].length() &lt; 4 || date[2].length() &gt; 4  )</span>
+<span class="fc" id="L133">              throw new IllegalArgumentException(&quot;Year must be in format YYYY&quot;);</span>
+<span class="pc bpc" id="L134" title="2 of 4 branches missed.">          if (hours &gt; 24 || hours &lt; 0)</span>
+<span class="nc" id="L135">              throw new IllegalArgumentException(&quot;Hours must be between 0-24.&quot;);</span>
+<span class="pc bpc" id="L136" title="2 of 4 branches missed.">          if (minutes &gt; 59 || minutes &lt; 0)</span>
+<span class="nc" id="L137">              throw new IllegalArgumentException(&quot;Minutes must be between 0-59.&quot;);</span>
           else
-<span class="fc" id="L131">              return passTime;</span>
+<span class="fc" id="L139">              return passTime;</span>
       }
 
   }
@@ -139,7 +147,7 @@ public class PhoneCall extends AbstractPhoneCall {
     @Override
     public String getStartTimeString() {
 
-<span class="fc" id="L142">        return validateTime(this.startTime);</span>
+<span class="fc" id="L150">        return validateTime(this.startTime);</span>
     }
 
     /**
@@ -149,7 +157,7 @@ public class PhoneCall extends AbstractPhoneCall {
     @Override
     public String getEndTimeString() {
 
-<span class="fc" id="L152">        return validateTime(this.endTime);</span>
+<span class="fc" id="L160">        return validateTime(this.endTime);</span>
     }
 
     /**
@@ -160,37 +168,38 @@ public class PhoneCall extends AbstractPhoneCall {
      */
     public void validatePhoneNumber(String number){
 
-<span class="pc bpc" id="L163" title="3 of 6 branches missed.">      if(number.length() &lt; 10 || (number.length() &gt; 10  &amp;&amp; number.length() &gt; 12) ) {</span>
-<span class="nc" id="L164">          throw new IllegalArgumentException(&quot;Phone number must be 10 digits.&quot;);</span>
-      }
-<span class="pc bpc" id="L166" title="1 of 2 branches missed.">      if(number.length() == 12){</span>
-<span class="pc bpc" id="L167" title="3 of 4 branches missed.">          if(number.charAt(3) != '-' &amp;&amp; number.charAt(7) != '-'){</span>
-<span class="nc" id="L168">              throw new IllegalArgumentException(&quot;Phone number must be 10 digits.&quot;);</span>
+<span class="pc bpc" id="L171" title="1 of 2 branches missed.">      if(number.length() &lt; 10 )</span>
+<span class="nc" id="L172">          throw new IllegalArgumentException(&quot;Phone number must be at least 10 digits.&quot;);</span>
+<span class="pc bpc" id="L173" title="1 of 2 branches missed.">      if(number.length() &gt; 12)</span>
+<span class="nc" id="L174">          throw new IllegalArgumentException(&quot;Too many digits in the phone number&quot;);</span>
+<span class="pc bpc" id="L175" title="1 of 2 branches missed.">      if(number.length() == 12){</span>
+<span class="pc bpc" id="L176" title="3 of 4 branches missed.">          if(number.charAt(3) != '-' &amp;&amp; number.charAt(7) != '-'){</span>
+<span class="nc" id="L177">              throw new IllegalArgumentException(&quot;Phone number is in an invalid format.&quot;);</span>
           }
           else {
-<span class="fc bfc" id="L171" title="All 2 branches covered.">              if(number.substring(0,2).matches(&quot;[0-9]+&quot;)){</span>
-<span class="pc bpc" id="L172" title="1 of 2 branches missed.">                  if(number.substring(8,12).matches(&quot;[0-9]+&quot;)){</span>
+<span class="fc bfc" id="L180" title="All 2 branches covered.">              if(number.substring(0,2).matches(&quot;[0-9]+&quot;)){</span>
+<span class="pc bpc" id="L181" title="1 of 2 branches missed.">                  if(number.substring(8,12).matches(&quot;[0-9]+&quot;)){</span>
 
                   }
                   else {
-<span class="nc" id="L176">                      throw new IllegalArgumentException(&quot;Phone number cannot contain letters.&quot;);</span>
+<span class="nc" id="L185">                      throw new IllegalArgumentException(&quot;Phone number cannot contain letters.&quot;);</span>
                   }
               }
               else{
-<span class="fc" id="L180">                  throw new IllegalArgumentException(&quot;Phone number cannot contain letters.&quot;);</span>
+<span class="fc" id="L189">                  throw new IllegalArgumentException(&quot;Phone number cannot contain letters.&quot;);</span>
               }
           }
       }
-<span class="pc bpc" id="L184" title="1 of 2 branches missed.">      if(number.length() == 10) {</span>
-<span class="nc bnc" id="L185" title="All 2 branches missed.">          if (number.matches(&quot;[0-9]+&quot;)) {</span>
+<span class="pc bpc" id="L193" title="1 of 2 branches missed.">      if(number.length() == 10) {</span>
+<span class="nc bnc" id="L194" title="All 2 branches missed.">          if (number.matches(&quot;[0-9]+&quot;)) {</span>
 
           }
           else {
-<span class="nc" id="L189">              throw new IllegalArgumentException(&quot;Caller number must be 10 digits.&quot;);</span>
+<span class="nc" id="L198">              throw new IllegalArgumentException(&quot;Phone number cannot contain letters.&quot;);</span>
           }
       }
 
-<span class="fc" id="L193">    }</span>
+<span class="fc" id="L202">    }</span>
 
     /**
      *
@@ -198,10 +207,10 @@ public class PhoneCall extends AbstractPhoneCall {
      */
     @Override
     public String getCaller() {
-<span class="pc bpc" id="L201" title="1 of 2 branches missed.">        if(callerNumber != null)</span>
-<span class="fc" id="L202">          return callerNumber;</span>
+<span class="pc bpc" id="L210" title="1 of 2 branches missed.">        if(callerNumber != null)</span>
+<span class="fc" id="L211">          return callerNumber;</span>
         else {
-<span class="nc" id="L204">            return &quot;Caller number not given&quot;;</span>
+<span class="nc" id="L213">            return &quot;Caller number not given&quot;;</span>
         }
     }
 
@@ -211,11 +220,11 @@ public class PhoneCall extends AbstractPhoneCall {
      */
     private void setCallerNumber(String number) {
         try{
-<span class="nc" id="L214">            validatePhoneNumber(number);</span>
-<span class="nc" id="L215">        }catch (IllegalArgumentException e){</span>
-<span class="nc" id="L216">            callerNumber = &quot;Phone number must be 10 digits.&quot;;</span>
-<span class="nc" id="L217">        }</span>
-<span class="nc" id="L218">    }</span>
+<span class="nc" id="L223">            validatePhoneNumber(number);</span>
+<span class="nc" id="L224">        }catch (IllegalArgumentException e){</span>
+<span class="nc" id="L225">            callerNumber = &quot;Phone number must be 10 digits.&quot;;</span>
+<span class="nc" id="L226">        }</span>
+<span class="nc" id="L227">    }</span>
 
     /**
      *
@@ -223,10 +232,10 @@ public class PhoneCall extends AbstractPhoneCall {
      */
     @Override
     public String getCallee() {
-<span class="pc bpc" id="L226" title="1 of 2 branches missed.">        if(calleeNumber != null)</span>
-<span class="fc" id="L227">            return calleeNumber;</span>
+<span class="pc bpc" id="L235" title="1 of 2 branches missed.">        if(calleeNumber != null)</span>
+<span class="fc" id="L236">            return calleeNumber;</span>
         else {
-<span class="nc" id="L229">            return &quot;Callee number not given&quot;;</span>
+<span class="nc" id="L238">            return &quot;Callee number not given&quot;;</span>
         }
     }
 
@@ -235,15 +244,15 @@ public class PhoneCall extends AbstractPhoneCall {
      * @return print using to AbstractPhoneCall toString() method
      */
     public String printString() {
-<span class="nc" id="L238">        return toString();</span>
+<span class="nc" id="L247">        return toString();</span>
     }
 
     /**
      * outputs get caller
      */
     public void printCall(){
-<span class="nc" id="L245">        System.out.print(getCaller());</span>
-<span class="nc" id="L246">    }</span>
+<span class="nc" id="L254">        System.out.print(getCaller());</span>
+<span class="nc" id="L255">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

@@ -75,7 +75,7 @@ public class Project1IT extends InvokeMainTestCase {
         //System.out.println(result.getTextWrittenToStandardError());
         assertThat(result.getTextWrittenToStandardOut(), containsString("missing"));
     }
-    
+
     @Test
     public void test7UknownCommandLineArgument(){
         String arg = "fred";
