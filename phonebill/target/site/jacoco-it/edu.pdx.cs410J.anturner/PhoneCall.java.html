@@ -160,8 +160,8 @@ public class PhoneCall extends AbstractPhoneCall {
      */
     public void validatePhoneNumber(String number){
 
-<span class="pc bpc" id="L163" title="2 of 6 branches missed.">      if(number.length() &lt; 10 || (number.length() &gt; 10  &amp;&amp; number.length() &gt; 12) ) {</span>
-<span class="fc" id="L164">          throw new IllegalArgumentException(&quot;Phone number must be 10 digits.&quot;);</span>
+<span class="pc bpc" id="L163" title="3 of 6 branches missed.">      if(number.length() &lt; 10 || (number.length() &gt; 10  &amp;&amp; number.length() &gt; 12) ) {</span>
+<span class="nc" id="L164">          throw new IllegalArgumentException(&quot;Phone number must be 10 digits.&quot;);</span>
       }
 <span class="pc bpc" id="L166" title="1 of 2 branches missed.">      if(number.length() == 12){</span>
 <span class="pc bpc" id="L167" title="3 of 4 branches missed.">          if(number.charAt(3) != '-' &amp;&amp; number.charAt(7) != '-'){</span>

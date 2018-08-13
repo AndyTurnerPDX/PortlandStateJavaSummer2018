@@ -21,7 +21,7 @@
      */
     public static void main(String[] args) {
 
-<span class="fc" id="L24">        String[] readMe = new String[10];</span>
+<span class="fc" id="L24">        String[] readMe = new String[9];</span>
 <span class="fc" id="L25">        readMe[0] = &quot;This is a Phone Bill Application:&quot;;</span>
 <span class="fc" id="L26">        readMe[1] = &quot;It is meant to help you keep track of the phone calls you have with another subscriber&quot;;</span>
 <span class="fc" id="L27">        readMe[2] = &quot;The details to be provided for each phone call should be...&quot;;</span>
@@ -52,51 +52,57 @@
 
 <span class="fc bfc" id="L53" title="All 2 branches covered.">        for(String a : args){</span>
 <span class="fc bfc" id="L54" title="All 2 branches covered.">            if(a.charAt(0) == '-') {</span>
-<span class="fc bfc" id="L55" title="All 2 branches covered.">                if (a.contains(&quot;readme&quot;))</span>
-<span class="fc" id="L56">                    readMeFlag = true;</span>
-<span class="fc bfc" id="L57" title="All 2 branches covered.">                else if (a.contains(&quot;print&quot;))</span>
-<span class="fc" id="L58">                    printFlag = true;</span>
+<span class="fc" id="L55">                a = a.toUpperCase();</span>
+<span class="fc bfc" id="L56" title="All 2 branches covered.">                if (a.contains(&quot;-README&quot;))</span>
+<span class="fc" id="L57">                    readMeFlag = true;</span>
+<span class="fc bfc" id="L58" title="All 2 branches covered.">                else if (a.contains(&quot;-PRINT&quot;))</span>
+<span class="fc" id="L59">                    printFlag = true;</span>
                 else
-<span class="fc" id="L60">                    System.err.println(&quot;Invalid Comand Line Argument&quot;);</span>
+<span class="fc" id="L61">                    System.err.println(&quot;Invalid Comand Line Argument&quot;);</span>
             }
             else {
 
-<span class="fc bfc" id="L64" title="All 2 branches covered.">                if(tempName == null)</span>
-<span class="fc" id="L65">                    tempName = a;</span>
-<span class="fc bfc" id="L66" title="All 2 branches covered.">                else if(tempCaller == null)</span>
-<span class="fc" id="L67">                    tempCaller = a;</span>
-<span class="fc bfc" id="L68" title="All 2 branches covered.">                else if(tempCallee == null)</span>
-<span class="fc" id="L69">                    tempCallee = a;</span>
-<span class="fc bfc" id="L70" title="All 2 branches covered.">                else if(tempStart == null)</span>
-<span class="fc" id="L71">                    tempStart = a;</span>
-<span class="fc bfc" id="L72" title="All 2 branches covered.">                else if(tempEnd == null)</span>
-<span class="fc" id="L73">                    tempEnd = a;</span>
+<span class="fc bfc" id="L65" title="All 2 branches covered.">                if(tempName == null)</span>
+<span class="fc" id="L66">                    tempName = a;</span>
+<span class="fc bfc" id="L67" title="All 2 branches covered.">                else if(tempCaller == null)</span>
+<span class="fc" id="L68">                    tempCaller = a;</span>
+<span class="fc bfc" id="L69" title="All 2 branches covered.">                else if(tempCallee == null)</span>
+<span class="fc" id="L70">                    tempCallee = a;</span>
+<span class="fc bfc" id="L71" title="All 2 branches covered.">                else if(tempStart == null)</span>
+<span class="fc" id="L72">                    tempStart = a;</span>
+<span class="fc bfc" id="L73" title="All 2 branches covered.">                else if(tempEnd == null)</span>
+<span class="fc" id="L74">                    tempEnd = a;</span>
                 else {
-<span class="fc" id="L75">                    System.err.println(&quot;Invalid Comand Line Argument&quot;);</span>
-<span class="nc" id="L76">                    System.exit(0);</span>
+<span class="fc" id="L76">                    System.err.println(&quot;Invalid Comand Line Argument&quot;);</span>
+<span class="nc" id="L77">                    System.exit(0);</span>
                 }
             }
 
 
         }
 
-<span class="fc bfc" id="L83" title="All 2 branches covered.">        if(readMeFlag == true)</span>
-<span class="fc" id="L84">            System.out.println(&quot;This is a phonebook application&quot;);</span>
+<span class="fc bfc" id="L84" title="All 2 branches covered.">        if(readMeFlag == true){</span>
+<span class="fc bfc" id="L85" title="All 2 branches covered.">            for (String r : readMe)</span>
+<span class="fc" id="L86">                System.out.println(r);</span>
+        }
 
-        try {
-<span class="fc" id="L87">            call = new PhoneCall(tempCaller, tempCallee, tempStart, tempEnd);  // Refer to one of Dave's classes so that we can be sure it is on the classpath</span>
-<span class="fc" id="L88">            bill = new PhoneBill(tempName, call);</span>
+<span class="fc bfc" id="L89" title="All 2 branches covered.">        if(args.length &gt;= 5){</span>
+            try {
+<span class="fc" id="L91">                call = new PhoneCall(tempCaller, tempCallee, tempStart, tempEnd);  // Refer to one of Dave's classes so that we can be sure it is on the classpath</span>
+<span class="fc" id="L92">                bill = new PhoneBill(tempName, call);</span>
 
-<span class="fc bfc" id="L90" title="All 2 branches covered.">            if(printFlag == true)</span>
-<span class="fc" id="L91">                bill.print();</span>
+<span class="fc bfc" id="L94" title="All 2 branches covered.">                if(printFlag == true)</span>
+<span class="fc" id="L95">                    bill.print();</span>
 
-<span class="fc" id="L93">        }catch (IllegalArgumentException e){</span>
-<span class="fc" id="L94">            System.out.println(e.getMessage());</span>
-<span class="fc" id="L95">        }</span>
+<span class="fc" id="L97">            }catch (IllegalArgumentException e){</span>
+<span class="fc" id="L98">                System.out.println(e.getMessage());</span>
+<span class="fc" id="L99">            }</span>
+        }
 
 
-<span class="nc" id="L98">        System.exit(1);</span>
-<span class="nc" id="L99">    }</span>
+
+<span class="nc" id="L104">        System.exit(1);</span>
+<span class="nc" id="L105">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

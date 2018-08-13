@@ -52,9 +52,10 @@ public class Project1 {
 
         for(String a : args){
             if(a.charAt(0) == '-') {
-                if (a.contains("readme"))
+                a = a.toUpperCase();
+                if (a.contains("-README"))
                     readMeFlag = true;
-                else if (a.contains("print"))
+                else if (a.contains("-PRINT"))
                     printFlag = true;
                 else
                     System.err.println("Invalid Comand Line Argument");
@@ -85,16 +86,19 @@ public class Project1 {
                 System.out.println(r);
         }
 
-        try {
-            call = new PhoneCall(tempCaller, tempCallee, tempStart, tempEnd);  // Refer to one of Dave's classes so that we can be sure it is on the classpath
-            bill = new PhoneBill(tempName, call);
+        if(args.length >= 5){
+            try {
+                call = new PhoneCall(tempCaller, tempCallee, tempStart, tempEnd);  // Refer to one of Dave's classes so that we can be sure it is on the classpath
+                bill = new PhoneBill(tempName, call);
 
-            if(printFlag == true)
-                bill.print();
+                if(printFlag == true)
+                    bill.print();
 
-        }catch (IllegalArgumentException e){
-            System.out.println(e.getMessage());
+            }catch (IllegalArgumentException e){
+                System.out.println(e.getMessage());
+            }
         }
+
 
 
         System.exit(1);

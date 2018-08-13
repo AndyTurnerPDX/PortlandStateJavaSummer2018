@@ -73,9 +73,7 @@ public class PhoneCall extends AbstractPhoneCall {
       if (passTime == "" || passTime == null)
           throw new IllegalArgumentException("Invalid time.");
       else if (!passTime.contains(":"))
-          throw new IllegalArgumentException("Invalid time.");
-      else if (passTime.contains(" ") == false)
-          throw new IllegalArgumentException("Invalid time.");
+          throw new IllegalArgumentException("Time is missing.");
       else {
 
           int hours = 0;
@@ -93,40 +91,50 @@ public class PhoneCall extends AbstractPhoneCall {
           if(time[0].matches("[0-9]+"))
               hours = Integer.parseInt(time[0]);
           else
-              throw new IllegalArgumentException("Invalid hours");
+              throw new IllegalArgumentException("Hours must contain letters.");
 
           if(time[1].matches("[0-9]+"))
               minutes = Integer.parseInt(time[1]);
           else
-              throw new IllegalArgumentException("Invalid minutes");
+              throw new IllegalArgumentException("Minutes cannot contain letters.");
 
           if(date[0].matches("[0-9]+"))
               month = Integer.parseInt(date[0]);
           else
-              throw new IllegalArgumentException("Invalid month");
+              throw new IllegalArgumentException("Month cannot contain letters");
 
           if(date[1].matches("[0-9]+"))
               day = Integer.parseInt(date[1]);
           else
-              throw new IllegalArgumentException("Invalid day");
+              throw new IllegalArgumentException("Day cannot contain letters.");
 
           if(date[2].matches("[0-9]+"))
               year = Integer.parseInt(date[2]);
           else
-              throw new IllegalArgumentException("Invalid year");
+              throw new IllegalArgumentException("Year cannot contain letters.");
 
+          if((month == 0) || (day == 0 ) || (year == 0))
+              throw new IllegalArgumentException("Date is missing.");
 
           //  Check if time format is valid
-          if(month <= 0 || month > 12 || date[0].length() < 1 || date[0].length() > 2  )
-              throw new IllegalArgumentException("Invalid Month.");
-          if(day <= 0 || day > 31 || date[1].length() < 2 || date[1].length() > 2  )
-              throw new IllegalArgumentException("Invalid Date.");
-          if(year <= 2016 || date[2].length() < 4 || date[2].length() > 4  )
-              throw new IllegalArgumentException("Invalid Year.");
+          if(month <= 0 )
+              throw new IllegalArgumentException("Month must be greater than 0.");
+          if(month > 12)
+              throw new IllegalArgumentException("Month must be less than or equal to 12.");
+          if(date[0].length() < 1 || date[0].length() > 2)
+              throw new IllegalArgumentException("Moth must be in format M or MM.");
+          if(day <= 0 )
+              throw new IllegalArgumentException("Day must be at least 1.");
+          if(day > 31)
+              throw new IllegalArgumentException("Day cannot be greater than 31.");
+          if(date[1].length() < 2 || date[1].length() > 2)
+              throw new IllegalArgumentException("Day must be in format D or DD.");
+          if(date[2].length() < 4 || date[2].length() > 4  )
+              throw new IllegalArgumentException("Year must be in format YYYY");
           if (hours > 24 || hours < 0)
-              throw new IllegalArgumentException("Invalid hours.");
+              throw new IllegalArgumentException("Hours must be between 0-24.");
           if (minutes > 59 || minutes < 0)
-              throw new IllegalArgumentException("Invalid minutes.");
+              throw new IllegalArgumentException("Minutes must be between 0-59.");
           else
               return passTime;
       }
@@ -160,12 +168,13 @@ public class PhoneCall extends AbstractPhoneCall {
      */
     public void validatePhoneNumber(String number){
 
-      if(number.length() < 10 || (number.length() > 10  && number.length() > 12) ) {
-          throw new IllegalArgumentException("Phone number must be 10 digits.");
-      }
+      if(number.length() < 10 )
+          throw new IllegalArgumentException("Phone number must be at least 10 digits.");
+      if(number.length() > 12)
+          throw new IllegalArgumentException("Too many digits in the phone number");
       if(number.length() == 12){
           if(number.charAt(3) != '-' && number.charAt(7) != '-'){
-              throw new IllegalArgumentException("Phone number must be 10 digits.");
+              throw new IllegalArgumentException("Phone number is in an invalid format.");
           }
           else {
               if(number.substring(0,2).matches("[0-9]+")){
@@ -186,7 +195,7 @@ public class PhoneCall extends AbstractPhoneCall {
 
           }
           else {
-              throw new IllegalArgumentException("Caller number must be 10 digits.");
+              throw new IllegalArgumentException("Phone number cannot contain letters.");
           }
       }
 

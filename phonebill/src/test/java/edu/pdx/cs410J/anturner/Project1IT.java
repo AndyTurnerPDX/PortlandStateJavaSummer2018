@@ -20,6 +20,48 @@ public class Project1IT extends InvokeMainTestCase {
     }
 
     @Test
+    public void anotherMultiWordedName(){
+        String arg = "-print";
+        String arg0 = "Test 6";
+        String arg1 = "123-456-7890";
+        String arg2 = "234-567-8901";
+        String arg3 = "03/03/2018 12:00";
+        String arg4 = "04/04/2018 9:00";
+
+        MainMethodResult result = invokeMain(arg, arg0, arg1, arg2, arg3, arg4);
+
+        System.out.println(result.getTextWrittenToStandardOut());
+
+    }
+
+
+    @Test
+    public void anotherPrintTest(){
+        String arg = "-print";
+        String arg0 = "Test6";
+        String arg1 = "123-456-7890";
+        String arg2 = "234-567-8901";
+        String arg3 = "03/03/2018 12:00";
+        String arg4 = "04/04/2018 9:00";
+
+        MainMethodResult result = invokeMain(arg, arg0, arg1, arg2, arg3, arg4);
+
+        System.out.println(result.getTextWrittenToStandardOut());
+
+    }
+
+    @Test
+    public void readMeOnly(){
+        String arg = "-readme";
+
+        MainMethodResult result = invokeMain(arg);
+
+        System.out.println(result.getTextWrittenToStandardOut());
+        assertThat(result.getTextWrittenToStandardError(), containsString(""));
+
+    }
+
+    @Test
     public void test10MissingEndTime(){
         String arg0 = "Test6";
         String arg1 = "123-456-7890";
@@ -31,9 +73,9 @@ public class Project1IT extends InvokeMainTestCase {
 
         System.out.println(result.getTextWrittenToStandardOut());
         //System.out.println(result.getTextWrittenToStandardError());
-        assertThat(result.getTextWrittenToStandardOut(), containsString("Invalid"));
-
+        assertThat(result.getTextWrittenToStandardOut(), containsString("missing"));
     }
+    
     @Test
     public void test7UknownCommandLineArgument(){
         String arg = "fred";
@@ -51,7 +93,6 @@ public class Project1IT extends InvokeMainTestCase {
 
     @Test
     public void test6UnknownCommandLineOption(){
-
         String arg = "-fred";
         String arg0 = "Test6";
         String arg1 = "123-456-7890";
@@ -67,7 +108,6 @@ public class Project1IT extends InvokeMainTestCase {
 
     @Test
     public void test5EndTimeMalformatted(){
-
         String arg0 = "Test5";
         String arg1 = "123-456-7890";
         String arg2 = "234-567-8901";
@@ -140,7 +180,6 @@ public class Project1IT extends InvokeMainTestCase {
      */
     @Test
     public void testNoQuoteWithNameCommandLineArguments() {
-
         String noQuoteAroundName = "Andy";
         String anotherArgument = "Turner";
         MainMethodResult result = invokeMain(noQuoteAroundName,anotherArgument);
@@ -154,7 +193,6 @@ public class Project1IT extends InvokeMainTestCase {
      */
     @Test
     public void testHappyPathWithPrint() {
-
         String arg0 = "Another Name";
         String arg1 = "000-000-0000";
         String arg2 = "111-111-1111";
@@ -173,7 +211,6 @@ public class Project1IT extends InvokeMainTestCase {
 
     @Test
     public void testHappyPathWithReadMeAsFith() {
-
         String arg0 = "Another Name";
         String arg1 = "000-000-0000";
         String arg2 = "111-111-1111";
