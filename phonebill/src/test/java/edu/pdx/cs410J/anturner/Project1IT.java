@@ -103,7 +103,7 @@ public class Project1IT extends InvokeMainTestCase {
         MainMethodResult result = invokeMain(arg, arg0, arg1, arg2, arg3, arg4);
 
         System.out.println(result.getTextWrittenToStandardOut());
-        //assertThat(result.getTextWrittenToStandardOut(), not(containsString("Invalid Command Line Argument")));
+        assertThat(result.getTextWrittenToStandardOut(), not(containsString("Invalid Command Line Argument")));
     }
 
     @Test
@@ -206,7 +206,7 @@ public class Project1IT extends InvokeMainTestCase {
         //MainMethodResult result = invokeMain("another name", "000-000-0000","111-111-1111", "1/15/2018 19:40");
         System.out.println(result.getTextWrittenToStandardOut());
 
-       // assertThat(result.getTextWrittenToStandardOut(), containsString("Another"));
+        assertThat(result.getTextWrittenToStandardOut(), containsString("Another"));
     }
 
     @Test
@@ -222,7 +222,7 @@ public class Project1IT extends InvokeMainTestCase {
         MainMethodResult result = invokeMain(arg0, arg1, arg2, arg3, arg4, arg5, arg6); // , arg3, arg4);
 
         System.out.println(result.getTextWrittenToStandardOut());
-        //assertThat(result.getTextWrittenToStandardOut(), containsString("This"));
+        assertThat(result.getTextWrittenToStandardOut(), containsString("This"));
     }
 
 
