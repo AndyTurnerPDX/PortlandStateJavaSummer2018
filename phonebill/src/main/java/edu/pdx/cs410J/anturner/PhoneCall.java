@@ -70,10 +70,12 @@ public class PhoneCall extends AbstractPhoneCall {
      */
   public String validateTime(String passTime){
 
-      if (passTime == "" || passTime == null)
-          throw new IllegalArgumentException("Invalid time.");
+      if ((passTime == " "))
+          throw new IllegalArgumentException("Uh oh, the time is missing.");
+      else if((passTime == null))
+          throw new IllegalArgumentException("Unfortunately the time is invalid.");
       else if (!passTime.contains(":"))
-          throw new IllegalArgumentException("Time is missing.");
+          throw new IllegalArgumentException("Oh no, the time is missing.");
       else {
 
           int hours = 0;
@@ -91,7 +93,7 @@ public class PhoneCall extends AbstractPhoneCall {
           if(time[0].matches("[0-9]+"))
               hours = Integer.parseInt(time[0]);
           else
-              throw new IllegalArgumentException("Hours must contain letters.");
+              throw new IllegalArgumentException("Hours cannot contain letters.");
 
           if(time[1].matches("[0-9]+"))
               minutes = Integer.parseInt(time[1]);

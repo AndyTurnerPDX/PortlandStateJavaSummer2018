@@ -21,6 +21,12 @@ public class Project1 {
      */
     public static void main(String[] args) {
 
+//        int q = 0;
+//        for(String a : args){
+//            System.out.println(q + " " + a);
+//            q++;
+//        }
+
         String[] readMe = new String[9];
         readMe[0] = "This is a Phone Bill Application:";
         readMe[1] = "It is meant to help you keep track of the phone calls you have with another subscriber";
@@ -32,11 +38,13 @@ public class Project1 {
         readMe[7] = "If any input you have provided is invalid you will recieve and error message";
         readMe[8] = "Happy dialing!";
 
-        String tempName = null;
-        String tempCaller = null;
-        String tempCallee = null;
-        String tempStart = null;
-        String tempEnd = null;
+        String tempName = "";
+        String tempCaller = "";
+        String tempCallee = "";
+        String tempStartDate = "";
+        String tempStartTime = "";
+        String tempEndDate = "";
+        String tempEndTime = "";
 
         boolean readMeFlag = false;
         boolean printFlag = false;
@@ -62,16 +70,20 @@ public class Project1 {
             }
             else {
 
-                if(tempName == null)
+                if(tempName == "")
                     tempName = a;
-                else if(tempCaller == null)
+                else if(tempCaller == "")
                     tempCaller = a;
-                else if(tempCallee == null)
+                else if(tempCallee == "")
                     tempCallee = a;
-                else if(tempStart == null)
-                    tempStart = a;
-                else if(tempEnd == null)
-                    tempEnd = a;
+                else if(tempStartDate == "")
+                    tempStartDate = a;
+                else if(tempStartTime == "")
+                    tempStartTime = a;
+                else if(tempEndDate == "")
+                    tempEndDate = a;
+                else if(tempEndTime == "")
+                    tempEndTime = a;
                 else {
                     System.err.println("Invalid Comand Line Argument");
                     System.exit(0);
@@ -86,20 +98,19 @@ public class Project1 {
                 System.out.println(r);
         }
 
-        if(args.length >= 5){
-            try {
-                call = new PhoneCall(tempCaller, tempCallee, tempStart, tempEnd);  // Refer to one of Dave's classes so that we can be sure it is on the classpath
-                bill = new PhoneBill(tempName, call);
 
-                if(printFlag == true)
-                    bill.print();
+        tempStartDate = tempStartDate + " " + tempStartTime;
+        tempEndDate = tempEndDate + " " + tempEndTime;
 
-            }catch (IllegalArgumentException e){
+        try {
+            call = new PhoneCall(tempCaller, tempCallee, tempStartDate, tempEndDate);  // Refer to one of Dave's classes so that we can be sure it is on the classpath
+            bill = new PhoneBill(tempName, call);
+
+            if (printFlag == true)
+                bill.print();
+        } catch (IllegalArgumentException e){
                 System.out.println(e.getMessage());
-            }
         }
-
-
 
         System.exit(1);
     }

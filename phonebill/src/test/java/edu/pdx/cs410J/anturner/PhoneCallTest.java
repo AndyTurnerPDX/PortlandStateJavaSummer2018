@@ -14,10 +14,10 @@ public class PhoneCallTest {
     @Test
     public void testTimeNotValid(){
         // Given
-        String passCaller = "ABC-111-1111";
+        String passCaller = "567-111-1111";
         String passCallee = "222-222-2222";
-        String passStart = "1/15/2018 19:XX";
-        String passEnd = "2/15/2018 19:39";
+        String passStart = "1/15/2018 19:00";
+        String passEnd = "";
 
         try{
             new PhoneCall(passCaller, passCallee, passStart, passEnd);
