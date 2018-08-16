@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="693b2ab2-1f23-4c24-a9f9-304500c2c752" name="Default" comment="Proper read me.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/TextDumper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/TextParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/TextDumperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/TextParserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/PhoneBillTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/PhoneBillTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/TextDumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/TextDumper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/TextParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/TextParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/Project2IT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/Project2IT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/TextDumperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/TextDumperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/TextParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/TextParserTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,33 +34,34 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="java" value="6517" />
+          <entry key="java" value="6810" />
           <entry key="txt" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6517" />
+          <entry key="JAVA" value="6810" />
           <entry key="PLAIN_TEXT" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="34" />
-          <entry key="java" value="21" />
+          <entry key="class" value="35" />
+          <entry key="java" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="34" />
-          <entry key="JAVA" value="21" />
+          <entry key="CLASS" value="35" />
+          <entry key="JAVA" value="24" />
         </counts>
       </usages-collector>
     </session>
@@ -75,22 +74,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/Project2IT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+            <state relative-caret-position="256">
+              <caret line="33" column="96" selection-start-line="33" selection-start-column="96" selection-end-line="33" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#570#571#0" expanded="true" />
-                <element signature="e#627#628#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+            <state relative-caret-position="1155">
+              <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -98,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/TextParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
-              <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+            <state relative-caret-position="655">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/TextDumper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="169">
+              <caret line="47" column="170" selection-start-line="47" selection-start-column="170" selection-end-line="47" selection-end-column="170" />
             </state>
           </provider>
         </entry>
@@ -120,7 +117,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/PhoneBillTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -128,17 +125,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/TextDumperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+            <state relative-caret-position="1125">
+              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/TextParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+            <state relative-caret-position="195">
+              <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -146,20 +143,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/PhoneBill.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
+            <state relative-caret-position="351">
               <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#804#805#0" expanded="true" />
-                <element signature="e#843#844#0" expanded="true" />
-                <element signature="e#955#956#0" expanded="true" />
-                <element signature="e#990#991#0" expanded="true" />
-                <element signature="e#1073#1074#0" expanded="true" />
-                <element signature="e#1134#1135#0" expanded="true" />
-                <element signature="e#1189#1190#0" expanded="true" />
-                <element signature="e#1222#1223#0" expanded="true" />
-                <element signature="e#1434#1435#0" expanded="true" />
-                <element signature="e#1517#1518#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -208,11 +195,13 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/PhoneBill.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project1.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/Project1IT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/TextParser.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/PhoneBillTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/TextDumper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/Project2IT.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/Project2IT.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/TextParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/TextDumper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/TextDumperTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/TextParserTest.java" />
       </list>
     </option>
   </component>
@@ -222,8 +211,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="203" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="838" />
   </component>
@@ -233,6 +222,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -292,15 +282,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="abstractphone&#9;PSI&#9;JAVA://edu.pdx.cs410J.AbstractPhoneCall" />
+    <property name="SearchEverywhereHistoryKey" value="phonbilldu&#9;PSI&#9;JAVA://edu.pdx.cs410J.PhoneBillDumper&#10;abstractphone&#9;PSI&#9;JAVA://edu.pdx.cs410J.AbstractPhoneCall" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534020578342" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534387346628" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -475,6 +464,7 @@
       <workItem from="1532823426094" duration="196000" />
       <workItem from="1532823823103" duration="613000" />
       <workItem from="1533055870970" duration="38339000" />
+      <workItem from="1534361459672" duration="4334000" />
     </task>
     <task id="LOCAL-00001" summary="Proper read me.">
       <created>1533921711458</created>
@@ -487,27 +477,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Project1IT_testHappyPathWithPrint - 2018.08.10 at 09h 16m 51s.xml">
-      <configuration name="Project1IT.testHappyPathWithPrint" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Project1IT_testHappyPathWithPrint - 2018.08.10 at 09h 18m 17s.xml">
-      <configuration name="Project1IT.testHappyPathWithPrint" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Project1IT_test10MissingEndTime - 2018.08.10 at 09h 19m 59s.xml">
-      <configuration name="Project1IT.test10MissingEndTime" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Project1IT_test10MissingEndTime - 2018.08.10 at 09h 20m 23s.xml">
-      <configuration name="Project1IT.test10MissingEndTime" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Project1IT_testHappyPathWithReadMeAsFith - 2018.08.10 at 10h 17m 37s.xml">
-      <configuration name="Project1IT.testHappyPathWithReadMeAsFith" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Project1IT_testHappyPathWithReadMeAsFith - 2018.08.10 at 10h 18m 11s.xml">
-      <configuration name="Project1IT.testHappyPathWithReadMeAsFith" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Project1IT_testHappyPathWithReadMeAsFith - 2018.08.10 at 10h 20m 00s.xml">
-      <configuration name="Project1IT.testHappyPathWithReadMeAsFith" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Project1IT_testHappyPathWithReadMeAsFith - 2018.08.10 at 10h 20m 09s.xml">
       <configuration name="Project1IT.testHappyPathWithReadMeAsFith" configurationId="JUnit" />
     </history-entry>
@@ -517,9 +486,30 @@
     <history-entry file="Project2IT_test3TestFile - 2018.08.10 at 15h 11m 18s.xml">
       <configuration name="Project2IT.test3TestFile" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Project2IT_test3TestFile - 2018.08.15 at 12h 53m 49s.xml">
+      <configuration name="Project2IT.test3TestFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Project2IT_test3TestFile - 2018.08.15 at 13h 00m 23s.xml">
+      <configuration name="Project2IT.test3TestFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Project2IT_test3TestFile - 2018.08.15 at 13h 03m 02s.xml">
+      <configuration name="Project2IT.test3TestFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Project2IT_test3TestFile - 2018.08.15 at 13h 06m 51s.xml">
+      <configuration name="Project2IT.test3TestFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Project2IT_test3TestFile - 2018.08.15 at 13h 07m 02s.xml">
+      <configuration name="Project2IT.test3TestFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Project2IT_test3TestFile - 2018.08.15 at 13h 09m 42s.xml">
+      <configuration name="Project2IT.test3TestFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Project2IT_test3TestFile - 2018.08.15 at 13h 10m 03s.xml">
+      <configuration name="Project2IT.test3TestFile" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96271000" />
+    <option name="totallyTimeSpent" value="100605000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -531,21 +521,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="838" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="838" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.19670959" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.19957082" />
       <window_info id="Structure" order="1" sideWeight="0.502" side_tool="true" weight="0.19670959" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.50070524" side_tool="true" weight="0.23333333" />
-      <window_info anchor="bottom" id="Dependency Viewer" weight="0.3297587" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.3297587" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.74369746" visible="true" weight="0.32841823" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.74369746" visible="true" weight="0.32841823" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -555,6 +543,8 @@
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4990991" weight="0.3297769" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.34477827" side_tool="true" weight="0.32841823" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3297587" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.3297587" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="13" weight="0.3297587" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -582,9 +572,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project2.java</url>
-          <line>83</line>
+          <line>56</line>
           <properties />
-          <option name="timeStamp" value="24" />
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -777,13 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/TextDumperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/TextDumper.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -794,73 +777,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/TextParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/PhoneBillTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/TextDumper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/TextParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/PhoneBill.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
+        <state relative-caret-position="351">
           <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
-            <element signature="e#1134#1135#0" expanded="true" />
-            <element signature="e#1189#1190#0" expanded="true" />
-            <element signature="e#1222#1223#0" expanded="true" />
-            <element signature="e#1434#1435#0" expanded="true" />
-            <element signature="e#1517#1518#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/TextDumper (1).java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="29" lean-forward="true" selection-end-line="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/Project2IT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+        <state relative-caret-position="256">
+          <caret line="33" column="96" selection-start-line="33" selection-start-column="96" selection-end-line="33" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/Project2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+        <state relative-caret-position="1155">
+          <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/pdx/cs410J/projects/Summer2018/projects-Summer2018.jar!/edu/pdx/cs410J/PhoneBillDumper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/TextDumperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/TextParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/anturner/TextDumper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="47" column="170" selection-start-line="47" selection-start-column="170" selection-end-line="47" selection-end-column="170" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/PhoneBillTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/TextDumperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/TextParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="16" column="29" lean-forward="true" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/anturner/TextParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
         </state>
       </provider>
     </entry>

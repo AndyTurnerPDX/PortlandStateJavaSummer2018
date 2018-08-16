@@ -32,19 +32,21 @@ public class Project2 {
         readMe[7] = "If any input you have provided is invalid you will recieve and error message";
         readMe[8] = "Happy dialing!";
 
-        String tempName = null;
-        String tempCaller = null;
-        String tempCallee = null;
-        String tempStart = null;
-        String tempEnd = null;
-        String tempFile = null;
+        String tempName = "";
+        String tempCaller = "";
+        String tempCallee = "";
+        String tempStartDate = "";
+        String tempStartTime = "";
+        String tempEndDate = "";
+        String tempEndTime = "";
+        String tempFile = "";
 
         boolean readMeFlag = false;
         boolean printFlag = false;
         boolean textFileFlag = false;
 
-        PhoneCall call;     // Refer to one of Dave's classes so that we can be sure it is on the classpath
 
+        PhoneCall call;     // Refer to one of Dave's classes so that we can be sure it is on the classpath
         PhoneBill bill;
 
         if(args.length == 0) {
@@ -52,40 +54,46 @@ public class Project2 {
             System.exit(0);
         }
 
-        for( String a : args){
+        for(String a : args){
             if(a.charAt(0) == '-') {
-                if (a.contains("readme"))
+                a = a.toUpperCase();
+                if (a.contains("-README"))
                     readMeFlag = true;
-                else if (a.contains("print"))
+                else if (a.contains("-PRINT"))
                     printFlag = true;
-                else if (a.contains("textFile")){
+                else if (a.contains("-TEXTFILE")) {
                     textFileFlag = true;
-                    System.out.println("textFile");
-                    //if()
-                    a = tempFile;
-                    System.out.println(a);
+                    //a = tempFile;
+                    //System.out.println(a);
                 }
                 else
                     System.err.println("Invalid Comand Line Argument");
             }
             else {
 
-                if(tempName == null)
+                if(textFileFlag) {
+                    tempFile = a;
+                    textFileFlag = false;
+                }
+                else if(tempName == "")
                     tempName = a;
-                else if(tempCaller == null)
+                else if(tempCaller == "")
                     tempCaller = a;
-                else if(tempCallee == null)
+                else if(tempCallee == "")
                     tempCallee = a;
-                else if(tempStart == null)
-                    tempStart = a;
-                else if(tempEnd == null)
-                    tempEnd = a;
+                else if(tempStartDate == "")
+                    tempStartDate = a;
+                else if(tempStartTime == "")
+                    tempStartTime = a;
+                else if(tempEndDate == "")
+                    tempEndDate = a;
+                else if(tempEndTime == "")
+                    tempEndTime = a;
                 else {
                     System.err.println("Invalid Comand Line Argument");
                     System.exit(0);
                 }
             }
-
 
         }
 
@@ -95,16 +103,16 @@ public class Project2 {
         }
 
         try {
-            call = new PhoneCall(tempCaller, tempCallee, tempStart, tempEnd);  // Refer to one of Dave's classes so that we can be sure it is on the classpath
+            tempStartDate = tempStartDate + " " + tempStartTime;
+            tempEndDate = tempEndDate + " " + tempEndTime;
+            call = new PhoneCall(tempCaller, tempCallee, tempStartDate, tempEndDate);  // Refer to one of Dave's classes so that we can be sure it is on the classpath
             bill = new PhoneBill(tempName, call);
 
-            if(printFlag == true)
+            if (printFlag == true)
                 bill.print();
-
-        }catch (IllegalArgumentException e){
+        } catch (IllegalArgumentException e){
             System.out.println(e.getMessage());
         }
-
 
         System.exit(1);
     }

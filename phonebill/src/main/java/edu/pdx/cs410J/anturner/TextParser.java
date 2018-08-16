@@ -20,18 +20,20 @@ public class TextParser {
 
         InputStream is = null;
 
-        String filePath = "/Users/an_d/Documents/school/2017 Summer/CS 410 - Java/git/PortlandStateJavaSummer2017/PhoneBill/src/main/java/edu/pdx/cs410J/anturner/";
+        String filePath = "/Users/an_d/Documents/school/2017 Summer/CS 410 - Java/git/PortlandStateJavaSummer2017/PhoneBill/src/main/java/edu/pdx/cs410J/";
 
         int i;
         char c;
 
         String tempInput = new String();
 
-        String tempName = null;
-        String tempCaller = null;
-        String tempCallee = null;
-        String tempStart = null;
-        String tempEnd = null;
+        String tempName = "";
+        String tempCaller = "";
+        String tempCallee = "";
+        String tempStartDate = "";
+        String tempStartTime = "";
+        String tempEndDate = "";
+        String tempEndTime = "";
 
         PhoneBill bill;
         PhoneCall call;
@@ -51,32 +53,39 @@ public class TextParser {
                     tempInput+=c;
                 else {
 
-                    if(tempName == null)
+                    if(tempName == "")
                         tempName = tempInput;
-                    else if(tempCaller == null)
+                    else if(tempCaller == "")
                         tempCaller = tempInput;
-                    else if(tempCallee == null)
+                    else if(tempCallee == "")
                         tempCallee = tempInput;
-                    else if(tempStart == null)
-                        tempStart = tempInput;
-                    else if(tempEnd == null)
-                        tempEnd = tempInput;
+                    else if(tempStartDate == "")
+                        tempStartDate = tempInput;
+                    else if(tempStartTime == "")
+                        tempStartTime = tempInput;
+                    else if(tempEndDate == "")
+                        tempEndDate = tempInput;
+                    else if(tempEndTime == "")
+                        tempEndTime = tempInput;
 
                     try {
-                        call = new PhoneCall(tempCaller, tempCallee, tempStart, tempEnd);  // Refer to one of Dave's classes so that we can be sure it is on the classpath
+                        tempStartDate = tempStartDate + " " + tempStartTime;
+                        tempEndDate = tempEndDate + " " + tempEndTime;
+                        call = new PhoneCall(tempCaller, tempCallee, tempStartDate, tempEndDate);  // Refer to one of Dave's classes so that we can be sure it is on the classpath
                         bill = new PhoneBill(tempName, call);
-
 
                     }catch (IllegalArgumentException e){
                         System.out.println(e.getMessage());
                     }
 
                     tempInput = new String();
-                    tempName = null;
-                    tempCaller = null;
-                    tempCallee = null;
-                    tempStart = null;
-                    tempEnd = null;
+                    tempName = "";
+                    tempCaller = "";
+                    tempCallee = "";
+                    tempStartDate = "";
+                    tempStartTime = "";
+                    tempEndDate = "";
+                    tempEndTime = "";
                 }
                 //  prints character
                 System.out.print(c);
@@ -93,9 +102,5 @@ public class TextParser {
         }
         return true;
     }
-
-
-
-
 
 }
